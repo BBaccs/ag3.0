@@ -101,7 +101,7 @@ footer span.rights-reserved {
 .nav-banner,
 .cta-banner{
     background-color: #D3461D;
-    background-image: url(../assets/agGraphicElements/mobile/gritDarkTransparentmobile5.png);
+    background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
     background-position: bottom;
 }
 
@@ -160,7 +160,7 @@ button {
     background-color: #D3461D;
     /* border-color: #CE461C; */
     border: 0px solid;
-    background-image: url(../assets/agGraphicElements/mobile/gritDarkTransparentmobile5.png);
+    background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
     background-size: cover;
 }
 

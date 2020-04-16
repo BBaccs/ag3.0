@@ -127,6 +127,9 @@ footer span.rights-reserved {
     border-image: url(../assets/agGraphicElements/mobile/lineGray500x12.png) 60;
     border-bottom: 6px solid;
     border-image-repeat: repeat;
+    /* Fixes bugs on iphones / ipads and safari*/
+    min-width: 1600px !important;
+    margin-left: -3px !important;
 }
 
 .nav-inner-wrapper {

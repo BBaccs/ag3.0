@@ -128,7 +128,7 @@ footer span.rights-reserved {
     border-bottom: 6px solid;
     border-image-repeat: repeat;
     /* Fixes bug on iphones / ipads and safari Part 1 */
-    width: calc(100% + 10px);
+    width: calc(100% + 3px);
     margin-left: -3px !important;
 }
 
@@ -139,7 +139,7 @@ footer span.rights-reserved {
     padding-right: 10px;
     padding-left: 10px;
     /* Fix bug on iphones / ipads and safari Part 2 */
-    width: calc(100% - 10px);
+    width: calc(100% - 3px);
 }
 
 .ag-nav {

@@ -127,8 +127,8 @@ footer span.rights-reserved {
     border-image: url(../assets/agGraphicElements/mobile/lineGray500x12.png) 60;
     border-bottom: 6px solid;
     border-image-repeat: repeat;
-    /* Fixes bugs on iphones / ipads and safari*/
-    min-width: 1400px !important;
+    /* Fixes bug on iphones / ipads and safari Part 1 */
+    width: calc(100% + 10px);
     margin-left: -3px !important;
 }
 
@@ -138,6 +138,8 @@ footer span.rights-reserved {
     justify-content: flex-start;
     padding-right: 10px;
     padding-left: 10px;
+    /* Fix bug on iphones / ipads and safari Part 2 */
+    width: calc(100% - 10px);
 }
 
 .ag-nav {

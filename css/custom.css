@@ -128,7 +128,7 @@ footer span.rights-reserved {
     border-bottom: 6px solid;
     border-image-repeat: repeat;
     /* Fixes bugs on iphones / ipads and safari*/
-    min-width: 1600px !important;
+    min-width: 1400px !important;
     margin-left: -3px !important;
 }
 

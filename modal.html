@@ -1,0 +1,380 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Aussie Grill</title>
+</head>
+<!-- class="text-white" -->
+<body>
+
+    <div class="d-flex justify-content-end py-2 nav-banner">
+        <div class="mr-4">
+            <span class="mr-2" style="font-size: .9rem; color: white;">Follow the Adventure on</span>
+            <a style="color: white;" href="https://www.facebook.com/Aussie-Grill-by-Outback-381611752680353/" class="fa fa-lg fa-facebook"></a>
+            <a style="color: white;" href="#" class="fa fa-lg fa-twitter mx-2"></a>
+            <a style="color: white;" href="https://www.instagram.com/explore/tags/aussiegrill/" class="fa fa-lg fa-instagram"></a>
+        </div>
+        <!-- <button style="color: white;" class="mr-2">Social Media Icons/ Witt </button> -->
+    </div>
+    <div class="pos-f-t sticky-top">
+        <nav class="navbar navbar-dark bg-ag-dark justify-content-start">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav nav-uncollapsed ml-2">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-disabled="true">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-disabled="true">Careers</a>
+                    </li>
+                </ul>
+            <a href="../">
+                <img style="width: 100px;" src="assets/other/mobile/agLogo.png" alt="" />
+            </a>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-ag-dark p-4">
+                <ul class="nav d-flex flex-column">
+                    <li class="nav-item">
+                            <!-- href="../">Home</a> -->
+                        <a class="nav-link active" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/categoryMenu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#exampleModalCenter" class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catering</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="homePageCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators mx-0" style="bottom: -17.5px; margin-bottom: 0px;">
+            <li data-target="#homePageCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homePageCarousel" data-slide-to="1"></li>
+            <li data-target="#homePageCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/foodImages/categoryImages/mobileagBaconBombOfficial.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block" style="left: -80px;
+                top: -20px;">
+                    <h1 class="sr-only">Welcome to Aussie Grill</h1>
+                    <img style="position: relative; top: 70px;" width="50%" src="assets/foodImages/categoryImages/mobileagFuelYourAdventure.png" alt="" />
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/foodImages/categoryImages/mobileagCrispySirachaOfficial.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <!-- <h5>Fuel your adventure</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/foodImages/categoryImages/mobileagAussieChickenSalad.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <!-- <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#homePageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#homePageCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+<main style="background-image: url(assets/agGraphicElements/agButcherPaperWhite.jpg); background-size: contain;" class="container-fluid py-3 pt-4">
+<!-- 
+    <div style="background-color: white;    margin-top: -20px;
+    background-color: white;
+    padding: 1.5rem .75rem .25rem .75rem;
+    margin-bottom: 1rem;" class="container-fluid">
+        <p style="color: #FBBE00; text-align: center; padding: 1rem; font-size: 1.25rem;">A menu filled with big, bold, Aussie-inspired eats awaits. WELCOME TO AUSSIE GRILL.</p>
+    </div> -->
+
+    <!-- text-shadow: 0 0 3px #212529, 0 0 5px #212529; -->
+
+    <div style="height: 60px; background-image: url(assets/graphicElementsOfficial/strokeDkGray.png); background-size: cover; margin-top: 1.25rem;" class="d-flex justify-content-center">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h2 style="margin-bottom: 0px; color: white;">HANDHELDS</h2>
+        </div>
+    </div>
+    <div class="pseudo-test" class="w-100">
+        <a href="./pages/itemMenuPages.html">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobileagBraisedBeefOfficial.jpg" alt="" />
+        </a>
+    </div>
+
+    <div style="height: 60px; background-image: url(assets/graphicElementsOfficial/strokeOrange.png); background-size: cover;" class="d-flex justify-content-center">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h2 style="margin-bottom: 0px;">LARGE PLATES</h2>
+        </div>
+        <!-- <div>
+            <img style="width: 52px;  transform: scaleX(-1);" src="assets/foodImages/categoryImages/mobileagChicken.png" alt="" />
+        </div> -->
+    </div>
+    <div class="pseudo-test" class="w-100">
+        <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobileagRibs.jpg" alt="" />
+        </a>
+    </div>
+
+    <div style="background-color: white;" class="container-fluid p-4 d-flex justify-content-center flex-column">
+        <img style="width: 60px;" class="mx-auto" src="assets/agElementsOfficial/agBullVectorSmall.png" alt="" />
+        <h2 style="font-family: Gibson-SemiBold;
+        line-height: .9230769230769231em;
+        margin-bottom: 2px;
+        letter-spacing: .2px; font-size: 2rem; text-align: center; margin-top: 1rem;">SIDES & SNACKS</h2>
+    </div>
+    <div class="w-100">
+        <div>
+            <a href="#">
+                <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobileagHandBreadedChickenTenders.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+
+    <div style="background-color: white;" class="container-fluid p-4 d-flex justify-content-center flex-column">
+        <img style="width: 30px;" class="mx-auto" src="assets/agElementsOfficial/agBullVectorSmall.png" alt="" />
+        <h2 style="font-family: Gibson-SemiBold;
+        line-height: .9230769230769231em;
+        margin-bottom: 2px;
+        letter-spacing: .2px; font-size: 2rem; text-align: center; margin-top: 1rem;">KIDS</h2>
+    </div>
+    <div class="w-100">
+        <a href="#">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobileagBloomPedals.jpg" alt="" />
+        </a>
+    </div>
+
+    <div style="background-color: white;" class="container-fluid p-4 d-flex justify-content-center flex-column">
+        <img style="width: 60px;" class="mx-auto" src="assets/agElementsOfficial/agBullVectorSmall.png" alt="" />
+        <h2 style="font-family: Gibson-SemiBold;
+        line-height: .9230769230769231em;
+        margin-bottom: 2px;
+        letter-spacing: .2px; font-size: 2rem; text-align: center; margin-top: 1rem;">SALADS</h2>
+    </div>
+    <div class="w-100">
+        <a href="#">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobileagAussieChickenSalad.jpg" alt="" />
+        </a>
+    </div>
+
+    <div style="background-color: white;" class="container-fluid p-4 d-flex justify-content-center flex-column">
+        <img style="width: 60px;" class="mx-auto" src="assets/agElementsOfficial/agBullVectorSmall.png" alt="" />
+        <h2 style="font-family: Gibson-SemiBold;
+        line-height: .9230769230769231em;
+        margin-bottom: 2px;
+        letter-spacing: .2px; font-size: 2rem; text-align: center; margin-top: 1rem;">DESERTS & BEVERAGES</h2>
+    </div>
+    <div class="w-100">
+        <a href="#">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobileagDesertUnofficial.jpg" alt="" />
+        </a>
+    </div>
+
+    <div style="background-color: white;" class="container-fluid p-4 pt-5 mt-4">
+        <h2 style="font-family: Gibson-SemiBold;
+        line-height: .9230769230769231em;
+        margin-bottom: 2px;
+        letter-spacing: .2px; font-size: 1.5rem; text-align: center;">CATERING FOR YOUR EVENTS</h2>
+        <div class="row justify-content-center mt-4">
+            <button class="btn btn-primary">ORDER CATERING</button>
+        </div>
+    </div>
+    <div class="w-100">
+        <a href="#">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobiletoppedChickenWithSalad.jpg" alt="" />
+        </a>
+    </div>
+
+    <div style="background-color: white;" class="container-fluid p-4 pt-5 mt-4">
+        <h2 style="font-family: Gibson-SemiBold;
+        line-height: .9230769230769231em;
+        margin-bottom: 2px;
+        letter-spacing: .2px; font-size: 1.5rem; text-align: center;">CAREERS, WE'RE HIRING!</h2>
+        <div class="row justify-content-center mt-4">
+            <!-- ADVENTURE WITH US
+            ADVENTURE BOLDY
+            GO TO THE UNCHARTED -->
+            <button class="btn btn-primary mr-4">JOIN THE FAM</button>
+            <button class="btn btn-primary">ABOUT US</button>
+        </div>
+    </div>
+    <div class="w-100">
+        <a href="#">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobile//agCareersTest.png" alt="" />
+        </a>
+    </div>
+
+    <div style="background-color: white;" class="container-fluid p-4 pt-5 mt-4">
+        <h2 style="font-family: Gibson-SemiBold;
+        line-height: .9230769230769231em;
+        margin-bottom: 2px;
+        letter-spacing: .2px; font-size: 1.5rem; text-align: center;">FRANCHISING INFORMATION</h2>
+        <div class="row justify-content-center mt-4">
+            <button class="btn btn-primary">JOIN THE ADVENTURE</button>
+        </div>
+    </div>
+    <div class="w-100">
+        <a href="#">
+            <img style="width: 100%; height: 200px;" src="assets/foodImages/categoryImages/mobileagFranchizeUnofficial.jpg" alt="" />
+        </a>
+    </div>
+</main>
+
+<footer style="color: white; text-align: center; height: fit-content;" class="py-1">
+    <img style="width: 100%;" src="assets/images/agGoFurtherWithFlavorUnofficial.pn" alt="" />
+</footer>
+
+
+
+
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title w-100 text-center ml-4" id="exampleModalCenterTitle">Select A Location</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <section class="modal-body">
+                <h2 style="font-size: 1rem; color: #D3461D;">International Plaza and Bay Street Food Court</h2>
+                <p style="font-size: .75rem;">Address: 2223 N. Westshore Blvd. Tampa, FL 33607</p>  
+                <p style="font-size: .75rem;">Phone: (813) 497-7106</p>
+                <p style="font-size: .75rem;">Hours: Monday - Saturday: 10AM - 9 PM</p>
+                <p style="font-size: .75rem;">Sunday: 11 AM - 6 PM</p>
+                <div style="display: flex;">
+                    <p style="font-size: .75rem; margin-right: 1rem; color: #D3461D;">We're Open</p>
+                    <div style="width: 1rem;height: 1rem; background-color: #D3461D;" class="spinner-grow" role="status">
+                        <span class="sr-only">We're Open</span>
+                    </div>
+                </div>
+
+
+                <h2 style="font-size: 1rem; color: #D3461D;">Brandon</h2>
+                <p style="font-size: .75rem;">Address: Brandon 459 Brandon Town Center Dr. Brandon, FL 33511</p>  
+                <p style="font-size: .75rem;">Phone: (813) 402-3200</p>
+                <p style="font-size: .75rem;">Hours: Monday - Saturday: 10AM - 9 PM</p>
+                <p style="font-size: .75rem;">Sunday: 11 AM - 6 PM</p>
+                <div style="display: flex;">
+                    <p style="font-size: .75rem; margin-right: 1rem; color: #D3461D;">We're Open</p>
+                    <div style="width: 1rem;height: 1rem; background-color: #D3461D;" class="spinner-grow" role="status">
+                        <span class="sr-only">We're Open</span>
+                    </div>
+                </div>
+
+                <h2 style="font-size: 1rem; color: #D3461D;">Wesley Chapel</h2>
+                <p style="font-size: .75rem;">Address: 2223 N. Westshore Blvd. Tampa, FL 33607 (813) 497-7106</p>  
+                <p style="font-size: .75rem;">Hours: Monday - Saturday: 10AM - 9 PM</p>
+                <p style="font-size: .75rem;">Sunday: 11 AM - 6 PM</p>
+                <div style="display: flex;">
+                    <p style="font-size: .75rem; margin-right: 1rem; color: #D3461D;">Grand Opening on 4/21/2020</p>
+                    <div style="width: 1rem;height: 1rem; background-color: red;" class="spinner-grow" role="status">
+                        <span class="sr-only">Closed until April twenty first</span>
+                    </div>
+                </div>
+                
+            </section>
+          </div>
+        </div>
+      </div> -->
+    
+
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title w-100 text-center ml-4" id="exampleModalCenterTitle">Select A Location</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <section class="modal-body">
+                    <div style="margin-bottom: 1.5rem;">
+                        <h2 style="font-size: 1rem; color: #D3461D;">International Plaza and Bay Street Food Court</h2>
+                        <p style="font-size: .75rem;">Address: 2223 N. Westshore Blvd. Tampa, FL 33607</p>  
+                        <p style="font-size: .75rem;">Phone: (813) 497-7106</p>
+                        <p style="font-size: .75rem;">Hours: Monday - Saturday: 10AM - 9 PM</p>
+                        <p style="font-size: .75rem;">Sunday: 11 AM - 6 PM</p>
+                        <button class="btn btn-primary btn-sm">Use This Location</button>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <h2 style="font-size: 1rem; color: #D3461D;">Brandon</h2>
+                        <p style="font-size: .75rem;">Address: Brandon 459 Brandon Town Center Dr. Brandon, FL 33511</p>  
+                        <p style="font-size: .75rem;">Phone: (813) 402-3200</p>
+                        <p style="font-size: .75rem;">Hours: Monday - Saturday: 10AM - 9 PM</p>
+                        <p style="font-size: .75rem;">Sunday: 11 AM - 6 PM</p>
+                        <button class="btn btn-primary btn-sm">Use This Location</button>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h2 style="font-size: 1rem; color: #D3461D;">Wesley Chapel</h2>
+                        <p style="font-size: .75rem;">Address: 2223 N. Westshore Blvd. Tampa, FL 33607 (813) 497-7106</p>  
+                        <p style="font-size: .75rem;">Hours: Monday - Saturday: 10AM - 9 PM</p>
+                        <p style="font-size: .75rem;">Sunday: 11 AM - 6 PM</p>
+                        <button class="btn btn-primary btn-sm">Use This Location</button>
+                    </div>
+                    
+                </section>
+              </div>
+            </div>
+          </div> -->
+
+  <!-- add a skip link -->
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+<script src="myjs.js"></script>
+
+</html>

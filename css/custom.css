@@ -136,10 +136,10 @@ footer span.rights-reserved {
     flex-wrap: nowrap !important;
     align-items: center;
     justify-content: flex-start;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 9px;
+    padding-left: 9px;
     /* Fix bug on iphones / ipads and safari Part 2 */
-    width: calc(100% - 6px);
+    width: calc(100% - 3px);
 }
 
 .ag-nav {

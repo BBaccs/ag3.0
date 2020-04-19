@@ -1,5 +1,4 @@
 /* GLOBAL */
-
 body, body * {
     text-transform: uppercase;
 }
@@ -127,9 +126,9 @@ footer span.rights-reserved {
     border-image: url(../assets/agGraphicElements/mobile/lineGray500x12.png) 60;
     border-bottom: 6px solid;
     border-image-repeat: repeat;
-    /* Fixes bug on iphones / ipads and safari Part 1 */
-    width: calc(100% + 6px);
-    margin-left: -3px !important;
+        /* Fixes bug on iphones / ipads and safari Part 1 */
+        width: calc(100% + 6px);
+        margin-left: -3px !important;
 }
 
 .nav-inner-wrapper {
@@ -138,8 +137,8 @@ footer span.rights-reserved {
     justify-content: flex-start;
     padding-right: 9px;
     padding-left: 9px;
-    /* Fix bug on iphones / ipads and safari Part 2 */
-    width: calc(100% - 3px);
+        /* Fix bug on iphones / ipads and safari Part 2 */
+        width: calc(100% - 3px);
 }
 
 .ag-nav {
@@ -162,7 +161,6 @@ button {
 
 .btn-primary {
     background-color: #D3461D;
-    /* border-color: #CE461C; */
     border: 0px solid;
     background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
     background-size: cover;
@@ -172,7 +170,6 @@ button {
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
     background: #CE461C !important;
-    border: 1px solid #CE461C;
 }
 
 .nav-link,
@@ -232,11 +229,7 @@ button {
 }
 
 
-
-
-
 /* HOMEPAGE */
-
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);
 }
@@ -322,7 +315,6 @@ button {
 
 
 /* MENU CATEGORY PAGE */
-
 .menu-page-bg,
 .landing-content-wrapper {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);
@@ -436,7 +428,6 @@ button {
 
 
 /* Landing Pages*/
-
 .landing-page .landing-heading {
     color: #D3461D;
     font-size: 1.5rem;
@@ -448,6 +439,7 @@ button {
     font-size: 1.5rem;
     color: #D3461D;
 }
+
 /*We're Hiring!*/
 #landing-hiring a {
     color: white;
@@ -467,7 +459,6 @@ button {
 
 
 /* CATERING PAGE */
-
 .catering-page h2 {
     padding: 0;
     margin: 0;
@@ -484,7 +475,6 @@ button {
 
 
 /* Media Queries */
-
 @media (max-width: 374px) { 
     .d-xsm-none {
         display: none;

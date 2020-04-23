@@ -302,6 +302,23 @@ button {
     border: 1px solid #CE461C;
 }
 
+.carousel-indicators-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+
 
 .button.pause-button {
     border-style: double;

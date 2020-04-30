@@ -513,6 +513,7 @@ button {
         font-size: 1.25rem;
     }
 
+    #cateringCarousel .carousel-inner,
     #homePageCarousel .carousel-inner {
         height: 500px;
     }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/ag3.0/css/custom.css">
 
     <title>Aussie Grill</title>
+    <!-- "../../../code/Website/css/custom.css" -->
 </head>
 <body>
 
@@ -21,7 +22,9 @@
             <span class="banner-text">Location: Wesley Chapel (Change Location)</span>
         </div>
     </div>
-    <div class="pos-f-t sticky-top nav-border">
+
+    <div style="border-image: url(ag3.0/assets/agGraphicElements/lineGray.png) 30;
+    border-bottom: 5px solid;" class="pos-f-t">
         <nav class="navbar navbar-dark bg-ag-dark justify-content-start">
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -30,17 +33,17 @@
             </button>
             <ul class="nav nav-uncollapsed ml-2">
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="#">Order</a>
+                    <a class="nav-link" href="#">Order</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ag3.0/pages/catering/cateringMenu/menuCategory.html">Catering</a>
+                    <a class="nav-link" href="#">Catering</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ag3.0/pages/otherPages/careers.html">Careers</a>
+                    <a class="nav-link" href="#">Careers</a>
                 </li>
             </ul>
-            <a href="./">
-                <img class="ml-2" src="/ag3.0/assets/other/mobile/agLogo.png" alt="" />
+            <a href="/ag3.0/index.html">
+                <img style="width: 100px;" src="/ag3.0/assets/other/mobile/agLogo.png" alt="" />
             </a>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
@@ -53,60 +56,56 @@
                         <a class="nav-link" href="/ag3.0/pages/mainMenu/menuCategory.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a data-toggle="modal" data-target="#exampleModalCenter" class="nav-link" href="#">Order</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ag3.0/pages/otherPages/about.html">About Us</a>
+                        <a class="nav-link" href="#">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ag3.0/pages/otherPages/careers.html">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/ag3.0/pages/catering/menuCategory.html">Catering</a>
+                        <a class="nav-link" href="#">Catering</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-<main class="catering-page menu-page">
-  <div class="menu-item-bg">
+<main class="menu-page">
+  <h1 class="sr-only">Choose A Menu Category</h1>
+  <!-- <div class="select-category-bg">
     <div class="d-flex">
-      <img src="/ag3.0/assets/agGraphicElements/animals/mobile/bullHalfSmall.png" alt="" />
-      <div style="margin-right: 3.5rem;" class="w-100">
-        <h1 class="text-center">CATERING DONE MORE DARINGLY</h1>
-        <span class="text-center pb-3" style="color: #D3461D;">We offer up a variety of platters to get you fueled through a work meeting, house party or wherever your next adventure takes you.</span>
-      </div>
+        <img src="/ag3.0/assets/agGraphicElements/animals/mobile/bullHalfSmall.png" alt="" />
+      <h1 style="margin-right: 3.5rem;" class="d-flex align-items-center w-100 justify-content-center">Choose a Category</h1>
     </div>
-  </div>
+  </div> -->
 
-  <div class="menu-page-bg">
+  <div>
     <ul>
-      <li class="py-4">
-        <a class="d-block" href="#">
-            <h2>Platters</h2>
-            <!-- font-family: openSansRegular; -->
-            <span style="color: #D3461D;">Serves 6-8</span>
+      <li class="py-3 menu-item-bg">
+        <a class="d-block" href="/ag3.0/pages/mainMenu/menuCategories/handheldsCategory.html">
+          <h2>Handhelds</h2>
         </a>
       </li>
-        <li class="py-4">
-            <a class="d-block" href="#">
-                <h2>Salad Platters</h2>
-                <span style="color: #D3461D;">Serves 6-8</span>
-            </a>
-        </li>
-        <li class="py-4">
-            <a class="d-block" href="#">
-                <h2>Sides</h2>
-                <span style="color: #D3461D;">Serves 6-8</span>
-            </a>
-        </li>
-        <li class="py-4">
-            <a class="d-block" href="#">
-                <h2>Deserts</h2>
-                <span style="color: #D3461D;">Serves 6-8</span>
-            </a>
-        </li>
+      <li class="py-3 menu-item-bg">
+        <h2>Large Plates</h2>
+      </li>
+      <li class="py-3 menu-item-bg">
+        <h2>Sides</h2>
+      </li>
+      <li class="py-3 menu-item-bg">
+        <h2>Snacks</h2>
+      </li>
+      <li class="py-3 menu-item-bg">
+        <h2>Kids</h2>
+      </li>
+      <li class="py-3 menu-item-bg">
+        <h2>Salads</h2>
+      </li>
+      <li class="py-3 menu-item-bg">
+        <h2>Dessert</h2>
+      </li>
+      <li class="py-3 menu-item-bg">
+        <h2>Beverages</h2>
+      </li>
     </ul>
   </div>
 
@@ -119,7 +118,7 @@
 </main>
 
 
-<footer style="height: fit-content; border-image: url(/assets/agGraphicElements/lineGray.png) 30;
+<footer style="height: fit-content; border-image: url(ag3.0/assets/agGraphicElements/lineGray.png) 30;
 border-top: 5px solid;">
     <div style="margin-bottom: 69px;" class="footer-wrapper px-1 py-2 bg-ag-dark text-white">
         <ul class="footer-nav nav nav-uncollapsed">
@@ -161,6 +160,7 @@ border-top: 5px solid;">
         </div>
     </div>
 </footer>
+
 
 </body>
 

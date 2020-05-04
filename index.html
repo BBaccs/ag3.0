@@ -92,6 +92,7 @@
 
 
     <main>
+        <h1 class="sr-only">Welcome to Aussie Grill</h1>
         <div id="homePageCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-indicators-wrapper mx-0">
                 <button class="button pause-button" aria-label="Pause carousel"></button>
@@ -103,12 +104,17 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/foodImages/productImages/desktop/baconBombPork.jpg" class="d-block w-100 carousel-img" alt="">
-                    <div class="carousel-caption d-md-block" style="left: -80px;
+                    <!-- Responsive pictures -->
+                    <picture>
+                        <source srcset="assets/foodImages/productImages/desktop/baconBombPork.jpg" media="(min-width: 1400px) and (max-width: 767px)">
+                        <!-- The <img /> is the fall back for non browser compatible w/ picture tag and mobile version.  -->
+                        <img src="assets/foodImages/productImages/mobile/baconBombPork345x230.jpg" class="d-block w-100 carousel-img" alt="">
+                    </picture>
+                    <!-- <div class="carousel-caption d-md-block" style="left: -80px;
                     top: -20px;">
                         <h1 class="sr-only">Welcome to Aussie Grill</h1>
                         <img class="carousel-logo" src="assets/carouselImages/agFuelYourAdventure.png" alt="Fuel Your Adventure" />
-                    </div>
+                    </div> -->
                 </div>
                 <div class="carousel-item">
                     <!-- Responsive pictures -->

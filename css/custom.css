@@ -474,7 +474,7 @@ button {
 
 
 /* CATERING PAGE */
-.catering-page h2 {
+.catering-page .menu-category, .catering-header  {
     padding: 0;
     margin: 0;
 }

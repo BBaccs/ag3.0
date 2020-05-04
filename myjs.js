@@ -5,15 +5,12 @@ $('#myModal').on('shown.bs.modal', function () {
 
 var carouselState = false;
 
-$('#home-pause').click(function () {
-
- 
+$('.pause-btn').click(function () {
   if(carouselState){
     $('#homeCarousel').carousel('cycle');
   } else {
     $('#homeCarousel').carousel('pause');
   }
-  
   $('#home-pause').toggleClass('play-btn');
   carouselState = !carouselState;
 });

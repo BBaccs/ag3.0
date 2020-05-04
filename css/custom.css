@@ -488,6 +488,12 @@ button {
     background-position-x: center;
 }
 
+/* Other */
+.animal-graphic {
+    position: relative;
+    bottom: 37px;
+}
+
 
 /* Media Queries */
 @media (max-width: 374px) { 

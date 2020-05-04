@@ -340,7 +340,7 @@ button {
     padding-top: 2rem;
 }
 
-.menu-page ul li, .menu-page div.border-top {
+.menu-page ul li, .menu-page div.border-on-top {
     list-style-type: none;
     border-top: 1px solid #cacaca;
 }

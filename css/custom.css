@@ -269,8 +269,9 @@ button {
     color: white;
 }
 
-.subheading-img {
-    height: 12.5rem;
+.menu-item-col {
+    width: 500px;
+    max-width: 500px;
 }
 
 #homepage-container-fluid .row,
@@ -326,6 +327,11 @@ button {
     height: 16px;
     bottom: -30px;
     right: 42px;
+}
+
+.menu-item-img,
+.card-img {
+    height: 200px;
 }
 
 
@@ -524,7 +530,8 @@ button {
         height: 500px;
     }
 
-    .subheading-img.card-img {
+    .menu-item-img,
+    .card-img {
         height: 275px;
     }
     .menu-page .product-description {
@@ -550,15 +557,16 @@ button {
     }  
  }
 
- @media (min-width: 768px) {
+ @media (max-width: 768px) {
     .product-image {
-        max-width: 500px;
+        max-width: 400px;
     }
  }
 
  @media (min-width: 1200px) {
 
-    .subheading-img {
+    .menu-item-img,
+    .card-img {
         height: 350px;
     }
 

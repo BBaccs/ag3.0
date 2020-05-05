@@ -23,3 +23,6 @@ if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chr
 
 //Fallback for browsers that don't support the HTML5 Picture element
 document.createElement("picture");
+
+
+console.log('test load');

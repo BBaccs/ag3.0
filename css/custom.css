@@ -391,7 +391,7 @@ button {
 }
 
 
-/* Item Menu Pages*/
+/* Item Menu Pages / PDP */
 .pig-graphic {
     position: relative;
     bottom: 33px;
@@ -548,6 +548,12 @@ button {
     #homePageCarousel .carousel-inner {
         height: 600px;
     }  
+ }
+
+ @media (min-width: 768px) {
+    .product-image {
+        max-width: 500px;
+    }
  }
 
  @media (min-width: 1200px) {

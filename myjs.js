@@ -15,5 +15,9 @@ $('.pause-btn').click(function () {
   carouselState = !carouselState;
 });
 
+conditionizr.on('safari', function () {
+  $('.sticky-top').removeClass('nav-border');
+});
+
 //Picture element HTML5 shiv
 document.createElement("picture");

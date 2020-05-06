@@ -477,6 +477,10 @@ button {
     line-height: 1.4;
 }
 
+.content-inner-wrapper {
+    max-width: 800px;
+}
+
 /*We're Hiring!*/
 .landing-content-wrapper * {
     font-family: openSansRegular;

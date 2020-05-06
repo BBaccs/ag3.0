@@ -422,7 +422,7 @@ button {
 }
 
 .product-image {
-    max-width: 800px;
+    max-width: 270px;
 }
 
 .product-content-wrapper * {
@@ -555,6 +555,13 @@ button {
     #homePageCarousel .carousel-inner {
         height: 600px;
     }  
+ }
+
+
+ @media (max-width: 370px) {
+    .product-image {
+        max-width: 270px;
+    }
  }
 
  @media (max-width: 768px) {

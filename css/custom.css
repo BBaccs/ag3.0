@@ -489,7 +489,7 @@ button {
 /* CAREERS PAGE */
 .careers-hero {
     height: 250px;
-    background-image: url(ag3.0/assets/people/mobile/employee.jpg);
+    background-image: url(/ag3.0/assets/people/mobile/employee.jpg);
     background-size: cover;
     background-position-x: center;
 }

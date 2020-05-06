@@ -567,7 +567,7 @@ button {
 
 
  @media (max-width: 370px) {
-    .product-image {
+    img.product-image {
         max-width: 270px;
     }
  }

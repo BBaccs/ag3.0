@@ -473,11 +473,11 @@ button {
     background-image: url(/ag3.0/assets/people/mobile/employee.jpg);
 }
 
-/*We're Hiring!*/
-#our-story a {
-    color: white;
+#our-story .landing-heading {
+    line-height: 1.4;
 }
 
+/*We're Hiring!*/
 .landing-content-wrapper * {
     font-family: openSansRegular;
     font-size: .9rem;

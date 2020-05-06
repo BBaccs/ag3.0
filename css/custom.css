@@ -332,10 +332,6 @@ button {
     height: 200px;
 }
 
-#homePageCarousel .carousel-inner {
-    height: 700px;
-}
-
 
 /* MENU CATEGORY PAGE */
 .menu-page-bg,
@@ -600,6 +596,9 @@ button {
 
     .carousel-item {
         height: 100%;
+    }
+    #homePageCarousel .carousel-inner {
+        height: 700px;
     }
  }
  

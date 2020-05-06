@@ -173,7 +173,8 @@ button {
 }
 
 .nav-link,
-.btn-primary {
+a.btn.btn-primary,
+button.btn.btn-primary {
     color: white;
 }
 
@@ -461,6 +462,17 @@ button {
     color: #D3461D;
 }
 
+
+.landing-hero {
+    height: 250px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#careers-page .landing-hero {
+    background-image: url(/ag3.0/assets/people/mobile/employee.jpg);
+}
+
 /*We're Hiring!*/
 #our-story a {
     color: white;
@@ -486,13 +498,6 @@ button {
 }
 
 
-/* CAREERS PAGE */
-.careers-hero {
-    height: 250px;
-    background-image: url(/ag3.0/assets/people/mobile/employee.jpg);
-    background-size: cover;
-    background-position-x: center;
-}
 
 /* Other */
 .animal-graphic {

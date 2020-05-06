@@ -284,12 +284,6 @@ button {
     margin: auto;
 }
 
-.carousel-logo {
-    position: relative;
-    top: 4.375rem;
-    width: 50%;
-}
-
 .carousel-indicators li {
     position: relative;
     width: .625rem;
@@ -336,6 +330,10 @@ button {
 .menu-item-img,
 .card-img {
     height: 200px;
+}
+
+#homePageCarousel .carousel-inner {
+    max-height: 700px;
 }
 
 
@@ -616,10 +614,6 @@ button {
  }
 
  @media (min-width: 1920px) {
-
-    #homePageCarousel .carousel-inner {
-        height: 900px;
-    } 
 
     .navbar-dark.bg-ag-dark {
         height: 90px;

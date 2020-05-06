@@ -462,7 +462,7 @@ button {
 }
 
 /*We're Hiring!*/
-#landing-hiring a {
+#our-story a {
     color: white;
 }
 
@@ -505,6 +505,9 @@ button {
 @media (max-width: 374px) { 
     .d-xsm-none {
         display: none;
+    }
+    .landing-subheading {
+        width: 18rem;
     }
 }
 

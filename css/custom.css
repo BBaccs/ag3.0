@@ -577,6 +577,9 @@ button {
     .product-image {
         max-width: 400px;
     }
+    .card-col {
+        max-width: 500px !important;
+    }
  }
 
  @media (min-width: 1200px) {

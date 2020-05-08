@@ -233,6 +233,10 @@ button {
     display: grid;
 }
 
+.social-links {
+    list-style: none;
+}
+
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);

@@ -8,9 +8,9 @@ var carouselState = false;
 
 $('.pause-btn').click(function () {
   if(carouselState){
-    $('#home-carousel').carousel('cycle');
+    $('.carousel').carousel('cycle');
   } else {
-    $('#home-carousel').carousel('pause');
+    $('.carousel').carousel('pause');
   }
   $('#home-pause').toggleClass('play-btn');
   carouselState = !carouselState;

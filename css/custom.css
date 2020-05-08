@@ -537,9 +537,8 @@ button {
     .nav-banner .fa-lg {
         font-size: 1.25rem;
     }
-
-    #cateringCarousel .carousel-inner,
-    #homePageCarousel .carousel-inner {
+    
+    .food-carousel .carousel-inner {
         height: 500px;
     }
 
@@ -565,7 +564,7 @@ button {
         padding: .5rem 0;
     }
 
-    #homePageCarousel .carousel-inner {
+    .food-carousel .carousel-inner {
         height: 600px;
     }  
  }
@@ -597,14 +596,14 @@ button {
         padding-top: 4rem !important;
     }
 
-    #homePageCarousel .carousel-inner {
+    .food-carousel .carousel-inner {
         height: 600px;
     }
 
     .carousel-item {
         height: 100%;
     }
-    #homePageCarousel .carousel-inner {
+    .food-carousel .carousel-inner {
         height: 800px;
     }
  }

@@ -22,7 +22,7 @@
     <div class="py-2 nav-banner text-white">
         <div class="d-flex justify-content-center align-items-center">
             <span class="mr-2" style="font-size: 1rem;">Follow the Adventure on</span>
-            <ul class="social-links d-flex mb-1">
+            <ul class="social-links d-flex mb-1 pl-0">
                 <li><a href="https://www.facebook.com/Aussie-Grill-by-Outback-381611752680353/" class="fa fa-lg fa-facebook" aria-label="View our Facebook"></a></li>
                 <li><a href="#" class="fa fa-lg fa-twitter mx-2" aria-label="View our Twitter"></a></li>
                 <li><a href="https://www.instagram.com/explore/tags/aussiegrill/" aria-label="View our Instagram" class="fa fa-lg fa-instagram"></a></li>
@@ -101,13 +101,13 @@
 
     <main>
         <h1 class="sr-only">Welcome to Aussie Grill</h1>
-        <div id="homePageCarousel" class="carousel slide" data-ride="carousel">
+        <div id="home-carousel" class="food-carousel carousel slide" data-ride="carousel">
             <div class="carousel-indicators-wrapper mx-0">
                 <button class="button pause-button" aria-label="Pause carousel"></button>
                 <ol class="carousel-indicators mx-0">
-                    <li data-target="#homePageCarousel" tabindex="0" role="button" aria-label="First slide" data-slide-to="0" class="active"></li>
-                    <li data-target="#homePageCarousel" tabindex="0" role="button" aria-label="Second slide" data-slide-to="1"></li>
-                    <li data-target="#homePageCarousel" tabindex="0" role="button" aria-label="Third slide" data-slide-to="2"></li>
+                    <li data-target="#home-carousel" tabindex="0" role="button" aria-label="First slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#home-carousel" tabindex="0" role="button" aria-label="Second slide" data-slide-to="1"></li>
+                    <li data-target="#home-carousel" tabindex="0" role="button" aria-label="Third slide" data-slide-to="2"></li>
                 </ol>
             </div>
             <div class="carousel-inner">
@@ -120,12 +120,10 @@
                     </picture>
                 </div>
                 <div class="carousel-item">
-                    <!-- Responsive pictures -->
                     <picture>
                         <source srcset="assets/carouselImages/desktop/test1111.jpg" media="(min-width: 2400px)">
                         <source srcset="assets/carouselImages/desktop/crispyChickenSrirachaSandwhich2000X900.jpg" media="(min-width: 1920px) and (max-width: 2399px)">
                         <source srcset="assets/carouselImages/desktop/crispyChickenSrirachaSandwhich2000X900.jpg" media="(min-width: 1400px) and (max-width: 1919px)">
-                        <!-- The <img /> is the fall back for non browser compatible w/ picture tag and mobile version.  -->
                         <img src="assets/carouselImages/mobile/crispyChickenSrirachaSandwhich.jpg" class="d-block w-100 carousel-img" alt="">
                     </picture>
                     <div class="carousel-caption d-md-block">
@@ -156,7 +154,6 @@
                         <a class="d-block" tabindex="-1" aria-label="Navigate to the Handhelds menu" href="pages/mainMenu/menuCategories/handheldsCategory.html">
                             <picture>
                                 <source srcset="assets/foodImages/categoryImages/desktop/crispyChickenSrirachaChickenSandwhich1200x800.jpg" media="(min-width: 1400px)">
-                                <!-- The <img /> is the fall back for non browser compatible w/ picture tag and mobile version.  -->
                                 <img class="w-100 menu-item-img" src="assets/foodImages/categoryImages/mobile/crispyChickenSrirachaChickenSandwhich350x230.jpg" alt="" />
                             </picture>
                         </a>
@@ -263,10 +260,8 @@
                     </div>
                     <div>
                         <a tabindex="-1" aria-label="Order Catering" class="d-block" href="#">
-                            <!-- Responsive pictures -->
                             <picture>
                                 <source srcset="assets/other/desktop/cateringDesktop.jpg" media="(min-width: 1200px)">
-                                <!-- The <img /> is the fall back for non browser compatible w/ picture tag and mobile version.  -->
                                 <img class="w-100 subheading-img card-img" src="assets/other/mobile/cateringMobile.jpg" alt="" />
                                 <div class="btn-bottom-wrapper">
                                     <button class="btn btn-primary">SEE MENU</button>

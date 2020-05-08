@@ -537,7 +537,7 @@ button {
     .nav-banner .fa-lg {
         font-size: 1.25rem;
     }
-    
+
     .food-carousel .carousel-inner {
         height: 500px;
     }
@@ -594,10 +594,6 @@ button {
 
     #homepage-container-fluid {
         padding-top: 4rem !important;
-    }
-
-    .food-carousel .carousel-inner {
-        height: 600px;
     }
 
     .carousel-item {

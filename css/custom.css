@@ -398,6 +398,12 @@ button {
     margin-bottom: 2rem;
 }
 
+.product-description-preview {
+    color: #D3461D;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cacaca;
+    font-size: 12px;
+}
 
 /* Item Menu Pages / PDP */
 .pig-graphic {

@@ -480,6 +480,10 @@ button {
     background-image: url(/ag3.0/assets/people/mobile/employee.jpg);
 }
 
+#our-story .landing-hero {
+    background-image: url(/ag3.0/assets/other/mobile/agOurStory.jpg);
+}
+
 #our-story .landing-heading {
     line-height: 1.4;
 }

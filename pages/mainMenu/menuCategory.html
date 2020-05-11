@@ -13,61 +13,89 @@
     <link rel="stylesheet" href="/ag3.0/css/custom.css">
 
     <title>Aussie Grill</title>
-    <!-- "../../../code/Website/css/custom.css" -->
 </head>
 <body>
 
-    <div class="d-flex justify-content-center py-2 nav-banner text-white">
-        <div>
-            <span class="banner-text">Location: Wesley Chapel (Change Location)</span>
-        </div>
-    </div>
+<!-- <a class="sr-only sr-only-focusable" href="#homepage-container-fluid">Skip to main content</a> -->
 
-    <div style="border-image: url(ag3.0/assets/agGraphicElements/lineGray.png) 30;
-    border-bottom: 5px solid;" class="pos-f-t">
-        <nav class="navbar navbar-dark bg-ag-dark justify-content-start">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
+<div class="py-2 nav-banner text-white">
+    <div class="d-flex justify-content-center align-items-center">
+        <span class="mr-2" style="font-size: 1rem;">Follow the Adventure on</span>
+        <ul class="social-links d-flex mb-1 pl-0">
+            <li><a href="https://www.facebook.com/Aussie-Grill-by-Outback-381611752680353/" class="fa fa-lg fa-facebook" aria-label="View our Facebook"></a></li>
+            <li><a href="#" class="fa fa-lg fa-twitter mx-2" aria-label="View our Twitter"></a></li>
+            <li><a href="https://www.instagram.com/explore/tags/aussiegrill/" aria-label="View our Instagram" class="fa fa-lg fa-instagram"></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="pos-f-t sticky-top nav-border">
+    <nav class="navbar navbar-dark bg-ag-dark">
+        <div class="container-lg d-flex nav-inner-wrapper">
+            <button class="navbar-toggler d-lg-none d-xl-none" type="button" data-toggle="collapse"
                 data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="nav nav-uncollapsed ml-2">
+            <ul class="nav nav-uncollapsed ml-2 ag-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Order</a>
+                    <a class="nav-link" href="/ag3.0/pages/mainMenu/menuCategory.html">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Catering</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="#">Order</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
+                <li class="nav-item d-none d-sm-none d-md-block">
+                    <a class="nav-link" href="/ag3.0/pages/catering/cateringMenu/menuCategory.html">Catering</a>
+                </li>
+                <li class="nav-item d-none d-sm-none d-md-block">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/ourStory.html">Our Story</a>
+                </li>
+                <li class="nav-item d-none d-sm-none d-md-block">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/careers.html">Careers</a>
+                </li>
+                <li class="nav-item d-none d-sm-none d-md-block">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/franchise.html">Franchise</a>
                 </li>
             </ul>
-            <a href="/ag3.0/index.html">
-                <img style="width: 100px;" src="/ag3.0/assets/other/mobile/agLogo.png" alt="" />
+            <a aria-label="Naviagte to homepage" href="./">
+                <picture>
+                    <source srcset="assets/other/mobile/agLogoLarge.png" media="(min-width: 1024px)">
+                    <img class="ml-2 ag-logo" src="/ag3.0/assets/other/mobile/agLogo.png" alt="Aussie Grill By Outback Steakhouse" />
+                </picture>
             </a>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-ag-dark p-4">
-                <ul class="nav d-flex flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/ag3.0/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/ag3.0/pages/mainMenu/menuCategory.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catering</a>
-                    </li>
-                </ul>
-            </div>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-ag-dark p-4">
+            <ul class="nav d-flex flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="/ag3.0/pages/mainMenu/menuCategory.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="modal" data-target="#exampleModalCenter" class="nav-link" href="#">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ag3.0/pages/catering/cateringMenu/menuCategory.html">Catering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/ourStory.html">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/careers.html">Careers</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/#">Locations</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/franchise.html">Franchise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ag3.0/pages/otherPages/#">Contact Us</a>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
 
 <main class="menu-page">
   <h1 class="sr-only">Choose A Menu Category</h1>
@@ -118,49 +146,58 @@
 </main>
 
 
-<footer style="height: fit-content; border-image: url(ag3.0/assets/agGraphicElements/lineGray.png) 30;
-border-top: 5px solid;">
-    <div style="margin-bottom: 69px;" class="footer-wrapper px-1 py-2 bg-ag-dark text-white">
-        <ul class="footer-nav nav nav-uncollapsed">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Catering</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Catering</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="#">Order</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Catering</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Catering</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-            </li>
-        </ul>
-        <div>
-            <span class="rights-reserved text-capitalize pl-1" style="font-size: .5rem;">@2020 Bloomin' Brands, Inc. All Rights Reserved.</span>
-            <ul class="privacy-nav nav nav-uncollapsed ml-0">
-                <li class="nav-item">
-                    <a style="font-size: .5rem;" class="nav-link text-capitalize" href="#">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                    <a style="font-size: .5rem;" class="nav-link" href="#">CCPA Privacy Notice</a>
-                </li>
-                <li class="nav-item">
-                    <a style="font-size: .5rem;" class="nav-link" href="#">Accessability Statement</a>
-                </li>
-                <li class="nav-item">
-                    <a style="font-size: .5rem;" class="nav-link" href="#">Terms & Conditions</a>
-                </li>
-            </ul>
-        </div>
+<footer class="footer-outer-wrapper">
+    <div class="footer-wrapper px-3 py-4 bg-ag-dark text-white" >
+            <div class="d-grid" style="grid-template-columns: 11fr 1fr;">
+                <ul class="nav nav-uncollapsed d-grid">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ag3.0/pages/privacyPolicyPages/privacyPolicy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ag3.0/pages/privacyPolicyPages/ccpa.html">CCPA Privacy Notice</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ag3.0/pages/privacyPolicyPages/accessabilityStatement.html">Accessability Statement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ag3.0/pages/privacyPolicyPages/termsAndConditions.html">Terms & Conditions</a>
+                    </li>
+                </ul>
+                <ul class="social-links m-0 p-0 w-100 h-100 d-flex text-center flex-column">
+                    <li class="m-2"><a href="https://www.facebook.com/Aussie-Grill-by-Outback-381611752680353/" class="fa fa-lg fa-facebook" aria-label="View our Facebook"></a></li>
+                    <li class="m-2"><a href="#" class="fa fa-lg fa-twitter" aria-label="View our Twitter"></a></li>
+                    <li class="m-2"><a href="https://www.instagram.com/explore/tags/aussiegrill/" aria-label="View our Instagram" class="fa fa-lg fa-instagram"></a></li>
+                </ul>
+            </div>
+       <div class="mt-3"> <span class="rights-reserved text-capitalize text-center w-100" style="font-size: .75rem;">@2020 Bloomin' Brands, Inc. All Rights Reserved.</span> </div>
     </div>
 </footer>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- use a pseudo class :after to get bull
+        <img style="position: absolute; top: 200px;" class="mx-auto" src="assets/agGraphicElements/animals/bullFullMedium.png" alt="" /> -->
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title w-100 text-center ml-4" id="exampleModalCenterTitle">Choose Your Delivery Method</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          ..bold flavor awaits you.
+        </div>
+        <div class="modal-footer justify-content-center">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <a href="#" class="btn btn-primary">Order</a>
+          <span>-Or-</span>
+          <a href="#" class="btn btn-primary">Catering</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
@@ -174,6 +211,6 @@ border-top: 5px solid;">
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-<script src="/myjs.js"></script>
+<script src="/ag3.0/simpleJavaScript.js"></script>
 
 </html>

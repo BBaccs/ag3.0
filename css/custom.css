@@ -477,13 +477,13 @@ button {
     background-position-x: center;
 }
 
-#careers-page .landing-hero {
+/* #careers-page .landing-hero {
     background-image: url(/../assets/people/mobile/employee.jpg);
 }
 
 #our-story .landing-hero {
     background-image: url(/../assets/other/mobile/agOurStory.jpg);
-}
+} */
 
 #our-story .landing-heading {
     line-height: 1.4;

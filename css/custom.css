@@ -237,6 +237,9 @@ button {
     list-style: none;
 }
 
+.table-wrapper {
+    overflow-x: scroll;
+}
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);

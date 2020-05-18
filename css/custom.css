@@ -240,6 +240,11 @@ button {
 .table-wrapper {
     overflow-x: scroll;
 }
+
+.orange-box-bg {
+    background-image: url(../assets/agGraphicElements/mobile/orangeBox.png);
+    background-size: cover;
+}
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);

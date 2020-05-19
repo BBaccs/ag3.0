@@ -522,6 +522,10 @@ button {
     max-width: 150px;
 }
 
+#qualifications-section h3{
+    font-size: 1.1rem;
+}
+
 /*We're Hiring!*/
 .landing-content-wrapper * {
     font-family: openSansRegular;

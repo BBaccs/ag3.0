@@ -1,7 +1,4 @@
 /* GLOBAL */
-body, body * {
-    text-transform: uppercase;
-}
 
 a, a:active {
     color: inherit;
@@ -455,7 +452,6 @@ button {
 
 .product-content-wrapper .disclaimer {
     font-size: .75rem;
-    text-transform: uppercase;
 }
 
 .product-content-wrapper .product-sides-heading {
@@ -479,7 +475,8 @@ button {
 }
 
 .landing-page .landing-subheading {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
     color: #D3461D;
 }
 
@@ -506,8 +503,8 @@ button {
     max-width: 1000px;
 }
 
-#franchise-lg-nav .nav-link{
-    font-size: .8rem !important;
+#franchise-lg-nav .nav-link {
+    font-size: .75rem !important;
 }
 
 #investment-wrapper h3 {
@@ -522,15 +519,14 @@ button {
     max-width: 150px;
 }
 
-#qualifications-section h3{
-    font-size: 1.1rem;
+#qualifications-section li{
+    margin-bottom: .5rem;
 }
 
 /*We're Hiring!*/
 .landing-content-wrapper * {
     font-family: openSansRegular;
     font-size: .9rem;
-    text-transform: capitalize;
 }
 
 .landing-content-wrapper .card-title {
@@ -626,6 +622,9 @@ button {
     }
     .card-col {
         max-width: 500px !important;
+    }
+    #franchise-lg-nav ul {
+        justify-content: center;
     }
  }
 

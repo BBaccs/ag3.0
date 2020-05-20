@@ -49,23 +49,23 @@ html * {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: bureauGrotCondensedBook;  
+    font-family: bureauGrotCondensedBook; 
 }
 
 .navbar,
-.nav-banner {
+.nav-banner,
+h1,h2,h3,h4,h5,h6,
+button,
+a {
     text-transform: uppercase;
 }
 
 footer {
-    /* background: url(../assets/foodImages/categoryImages/mobileagFooterUnofficial.jpg); */
     height: 6.25rem;
 }
 
 .footer-outer-wrapper {
     height: fit-content;
-    /* border-image: url(../assets/agGraphicElements/originals/lineGray.png) 30; */
-    /* border-top: 5px solid; */
     border-top: 1px solid black;
     margin-bottom: 60px;
 }
@@ -198,8 +198,6 @@ button.btn.btn-primary {
 }
 
 .cta-wrapper {
-    /* border-image: url(../assets/agGraphicElements/mobile/lineOrange500x12-2.png) 30;
-    border-top: .5rem solid; */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -248,10 +246,7 @@ button {
     background-size: cover;
 }
 
-/* .beige-bg {
-    background-image: url();
-    background-size: cover;
-} */
+
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);
@@ -553,7 +548,6 @@ button {
 }
 
 
-
 /* Other */
 .animal-graphic {
     position: relative;
@@ -624,6 +618,9 @@ button {
     img.product-image {
         max-width: 270px;
     }
+    #investment-link {
+        text-align: center;
+    }    
  }
 
  @media (max-width: 768px) {

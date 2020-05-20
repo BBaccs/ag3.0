@@ -523,6 +523,10 @@ button {
     margin-bottom: .5rem;
 }
 
+#franchise .landing-content-wrapper {
+    font-size: 1rem !important;
+}
+
 /*We're Hiring!*/
 .landing-content-wrapper * {
     font-family: openSansRegular;

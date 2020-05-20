@@ -522,8 +522,12 @@ button {
     max-width: 150px;
 }
 
-#qualifications-section h3{
+#qualifications-section h3 {
     font-size: 1.1rem;
+}
+
+#franchise .landing-content-wrapper {
+    font-size: 1rem !important;
 }
 
 /*We're Hiring!*/

@@ -583,9 +583,9 @@ button {
         font-size: 1rem;
     }
 
-    .nav-banner .fa-lg {
+    /* .nav-banner .fa-lg {
         font-size: 1.25rem;
-    }
+    } */
 
     .food-carousel .carousel-inner {
         height: 500px;
@@ -603,8 +603,7 @@ button {
 
  @media (min-width: 992px) { 
     
-    ul.ag-nav li.nav-item a,
-    .nav-banner * {
+    ul.ag-nav li.nav-item a {
         font-size: 1.25rem !important;
     }
 

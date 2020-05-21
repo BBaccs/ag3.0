@@ -44,6 +44,10 @@ a:hover {
     src: url(../assets/fonts/openSansRegular.ttf);
 }
 
+body {
+    text-align: left;
+}
+
 html * {
     font-family: bureauGrotMedium;    
 }

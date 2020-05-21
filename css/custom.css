@@ -475,7 +475,7 @@ button {
 /* Landing Pages*/
 .landing-page .landing-heading {
     color: #D3461D;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: bureauGrotUltraBlack;
     text-transform: uppercase;
 }
@@ -536,12 +536,12 @@ button {
 /*We're Hiring!*/
 .landing-content-wrapper * {
     font-family: openSansRegular;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .landing-content-wrapper .card-title {
     font-family: bureauGrotCondensedMedium;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: capitalize;
 }
 

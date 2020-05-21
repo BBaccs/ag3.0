@@ -150,7 +150,6 @@ footer span.rights-reserved {
 }
 
 .nav-banner > div > span {
-    height: 20px;
     font-size: .8rem;
 }
 
@@ -592,6 +591,10 @@ button {
     ul.ag-nav li.nav-item a,
     .nav-banner * {
         font-size: 1rem;
+    }
+
+    .nav-banner {
+        height: 30px;
     }
 
     /* .nav-banner .fa-lg {

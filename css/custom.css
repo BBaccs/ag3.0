@@ -546,7 +546,7 @@ button {
 .landing-content-wrapper .card-title {
     font-family: bureauGrotCondensedMedium;
     font-size: 1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 

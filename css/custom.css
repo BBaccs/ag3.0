@@ -562,6 +562,10 @@ button {
     text-transform: uppercase;
 }
 
+#vertical-img {
+    width: 155px;
+}
+
 
 /* CATERING PAGE */
 .catering-page .menu-category, .catering-header  {
@@ -616,6 +620,9 @@ button {
         width: 80%;
         margin: auto;
     }
+    /* #vertical-img {
+        width: 100%;
+    } */
  }
 
  @media (min-width: 992px) { 
@@ -639,6 +646,13 @@ button {
     img.product-image {
         max-width: 270px;
     } 
+ }
+
+ @media (max-width: 767px) {
+     #middle-info-img {
+         margin-top: 5px;
+         margin-bottom: 5px;
+     }
  }
 
  @media (max-width: 768px) {

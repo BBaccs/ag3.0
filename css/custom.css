@@ -596,6 +596,12 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     display: flex;
     justify-content: center;
+    padding: 0;
+}
+
+.animal-franchise-wrapper img {
+    height: 85px;
+    max-width: 80px;
 }
 
 /*We're Hiring!*/
@@ -649,6 +655,7 @@ body::-webkit-scrollbar-thumb {
     .animal-franchise-wrapper {
         display: block;
         text-align: left;
+        padding: 0px 15px;
     }
     .animal-franchise-wrapper img {
         display: none;

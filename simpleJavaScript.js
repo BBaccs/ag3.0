@@ -4,5 +4,5 @@ if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chr
   $('.nav-border').removeClass('nav-border');      
 }
 
-//Fallback for browsers that don't support the HTML5 Picture element
+// Fallback for browsers that don't support the HTML5 Picture element
 document.createElement("picture");

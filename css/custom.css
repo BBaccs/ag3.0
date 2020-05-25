@@ -649,9 +649,9 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.25rem;
     } */
 
-    .food-carousel .carousel-inner {
+    /* .food-carousel .carousel-inner {
         height: 500px;
-    }
+    } */
 
     .menu-item-img,
     .card-img {
@@ -677,9 +677,9 @@ body::-webkit-scrollbar-thumb {
         padding: .5rem 0;
     }
 
-    .food-carousel .carousel-inner {
+    /* .food-carousel .carousel-inner {
         height: 600px;
-    }  
+    }   */
  }
 
 
@@ -725,9 +725,9 @@ body::-webkit-scrollbar-thumb {
     .carousel-item {
         height: 100%;
     }
-    .food-carousel .carousel-inner {
+    /* .food-carousel .carousel-inner {
         height: 800px;
-    }
+    } */
  }
  
  @media (min-width: 1201px) {

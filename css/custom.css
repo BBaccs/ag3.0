@@ -584,7 +584,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #investment-wrapper p span {
-    max-width: 150px;
+    max-width: 200px;
+    line-height: 1.65;
 }
 
 #qualifications-section li {
@@ -593,6 +594,18 @@ body::-webkit-scrollbar-thumb {
 
 #franchise .landing-content-wrapper {
     font-size: 1rem !important;
+}
+
+.animal-franchise-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.animal-franchise-wrapper img {
+    height: 85px;
+    max-width: 80px;
 }
 
 /*We're Hiring!*/
@@ -642,6 +655,17 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media (min-width: 400px) {
+    .animal-franchise-wrapper {
+        display: block;
+        text-align: left;
+        padding: 0px 15px;
+    }
+    .animal-franchise-wrapper img {
+        display: none;
+    }
+ }
+
 @media (min-width: 768px) { 
     
     ul.ag-nav li.nav-item a,
@@ -653,9 +677,9 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.25rem;
     } */
 
-    .food-carousel .carousel-inner {
+    /* .food-carousel .carousel-inner {
         height: 500px;
-    }
+    } */
 
     .menu-item-img,
     .card-img {
@@ -681,9 +705,9 @@ body::-webkit-scrollbar-thumb {
         padding: .5rem 0;
     }
 
-    .food-carousel .carousel-inner {
+    /* .food-carousel .carousel-inner {
         height: 600px;
-    }  
+    }   */
  }
 
 
@@ -729,9 +753,9 @@ body::-webkit-scrollbar-thumb {
     .carousel-item {
         height: 100%;
     }
-    .food-carousel .carousel-inner {
+    /* .food-carousel .carousel-inner {
         height: 800px;
-    }
+    } */
  }
  
  @media (min-width: 1201px) {

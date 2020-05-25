@@ -382,6 +382,9 @@ button {
     /* justify-content: center; */
     flex-direction: column;
     margin-top: 0%;
+    width: 100%;
+    position: fixed;
+    top: 20%;
 }
 
 /* MENU CATEGORY PAGE */

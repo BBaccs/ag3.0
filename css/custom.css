@@ -362,6 +362,13 @@ button {
     height: 200px;
 }
 
+.bull-cta {
+    right: 22%;
+    position: absolute;
+    top: 21%;
+    display: inline;
+}
+
 
 /* MENU CATEGORY PAGE */
 .menu-page-bg,

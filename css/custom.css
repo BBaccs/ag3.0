@@ -456,6 +456,23 @@ button {
     font-size: 12px;
 }
 
+/* Scroll Bar Styling for desktop */
+/* body::-webkit-scrollbar {
+    width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #212529;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #D3461D;
+    background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
+    background-position: center;
+    background-repeat: repeat;
+    outline: 1px solid #D3461D;
+} */
+
 /* Item Menu Pages / PDP */
 .pig-graphic {
     position: relative;

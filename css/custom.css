@@ -261,6 +261,9 @@ button {
     font-style: italic;
 }
 
+.nav-anchor {
+    z-index: -1;
+}
 
 /* HOMEPAGE */
 #homepage-container-fluid {
@@ -458,11 +461,12 @@ button {
 
 /* Scroll Bar Styling for desktop */
 body::-webkit-scrollbar {
-    width: .5em;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-track {
     background-color: #212529;
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -470,7 +474,7 @@ body::-webkit-scrollbar-thumb {
     background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
     background-position: center;
     background-repeat: repeat;
-    outline: 1px solid #D3461D;
+    border-radius: 10px;
 }
 
 /* Item Menu Pages / PDP */
@@ -583,7 +587,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 150px;
 }
 
-#qualifications-section li{
+#qualifications-section li {
     margin-bottom: .5rem;
 }
 

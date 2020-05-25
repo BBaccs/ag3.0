@@ -239,6 +239,10 @@ button {
     background-color: rgb(0,0,0,.75);
 }
 
+.subheading-img {
+    height: 350px;
+}
+
 .d-grid {
     display: grid;
 }
@@ -450,6 +454,7 @@ button {
 
 .product-content-wrapper-lg {
     margin-bottom: 2rem;
+    display: inline-block;
 }
 
 .product-description-preview {
@@ -541,7 +546,6 @@ body::-webkit-scrollbar-thumb {
     color: #D3461D;
 }
 
-
 .landing-hero {
     height: 250px;
     background-size: cover;
@@ -606,6 +610,10 @@ body::-webkit-scrollbar-thumb {
 .animal-franchise-wrapper img {
     height: 85px;
     max-width: 80px;
+}
+
+#franchise-page {
+    overflow-x: hidden;
 }
 
 /*We're Hiring!*/

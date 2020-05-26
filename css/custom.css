@@ -267,6 +267,8 @@ button {
 
 .nav-anchor {
     z-index: -1;
+    width: 0px;
+    height: 0px;
 }
 
 /* HOMEPAGE */

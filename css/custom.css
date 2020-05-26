@@ -657,6 +657,44 @@ body::-webkit-scrollbar-thumb {
     width: 155px;
 }
 
+/* Privacy Policy Pages */
+
+.privacy-page ul,
+.privacy-page ol {
+    list-style-type: none;
+}
+
+.privacy-policy-sub-text {
+    font-weight: bold;
+}
+
+.privacy-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.left-column,
+.right-column {
+    margin-left: 10px;
+}
+
+.left-column nav li {
+    width: 250px;
+}
+
+.left-column nav li a {
+    margin-bottom: 3px;
+    font-size: .75rem;
+    width: 100%;
+}
+
+.left-column nav li {
+    list-style-type: none;
+}
+
+.right-column {
+    margin-top: 20px;
+}
 
 /* CATERING PAGE */
 .catering-page .menu-category, .catering-header  {
@@ -722,9 +760,20 @@ body::-webkit-scrollbar-thumb {
         width: 80%;
         margin: auto;
     }
-    /* #vertical-img {
-        width: 100%;
-    } */
+    .privacy-grid {
+        grid-template-columns: 1fr 5fr;
+    }
+    .right-column {
+        margin-top: 0px;
+    }
+    .left-column {
+        margin-left: 75px;
+        margin-right: 20px;
+    }
+    .left-column .btn-primary {
+        background-size: cover;
+        background-position: bottom;
+    }
  }
 
  @media (min-width: 992px) { 

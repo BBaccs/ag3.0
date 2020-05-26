@@ -104,6 +104,21 @@ footer span.rights-reserved {
     padding: .25rem;
 }
 
+.footer-outer-wrapper .footer-wrapper .desktop-footer .main-links li a,
+.footer-outer-wrapper .footer-wrapper .desktop-footer .privacy-links li a {
+    line-height: 12px;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.footer-outer-wrapper .footer-wrapper .desktop-footer .privacy-links li a {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: .75rem;
+}
+
 .nav-banner,
 .cta-banner{
     background-color: #D3461D;

@@ -271,6 +271,14 @@ button {
     height: 0px;
 }
 
+.font-small {
+    font-size: .7rem !important;
+}
+
+.small-btn {
+    min-width: 85px;
+}
+
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);

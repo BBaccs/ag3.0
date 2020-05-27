@@ -786,7 +786,7 @@ body::-webkit-scrollbar-thumb {
 
  @media (max-width: 375px) {
     .modal-wrapper-bull {
-        top: 10%;
+        top: 15%;
     }
  }
 

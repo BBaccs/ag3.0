@@ -145,14 +145,11 @@ footer span.rights-reserved {
     font-size: .75rem;
 }
 
-.nav-border {
+/* .nav-border {
     border-image: url(../assets/agGraphicElements/mobile/lineGray500x12.png) 60;
     border-bottom: 6px solid;
     border-image-repeat: repeat;
-        /* Fixes bug on iphones / ipads and safari Part 1 */
-        /* width: calc(100% + 6px);
-        margin-left: -3px !important; */
-}
+} */
 
 .nav-inner-wrapper {
     flex-wrap: nowrap !important;
@@ -160,8 +157,6 @@ footer span.rights-reserved {
     justify-content: flex-start;
     padding-right: 9px;
     padding-left: 9px;
-        /* Fix bug on iphones / ipads and safari Part 2 */
-        /* width: calc(100% - 3px); */
 }
 
 .nav-banner > div > span {

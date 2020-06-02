@@ -553,7 +553,8 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
 }
 
-.landing-page .landing-subheading {
+.landing-page .landing-subheading,
+.privacy-policy-sub-text {
     font-size: 1rem;
     font-weight: bold;
     color: #D3461D;
@@ -564,14 +565,6 @@ body::-webkit-scrollbar-thumb {
     background-size: cover;
     background-position-x: center;
 }
-
-/* #careers-page .landing-hero {
-    background-image: url(/../assets/people/mobile/employee.jpg);
-}
-
-#our-story .landing-hero {
-    background-image: url(/../assets/other/mobile/agOurStory.jpg);
-} */
 
 #our-story .landing-heading {
     line-height: 1.4;
@@ -683,6 +676,13 @@ body::-webkit-scrollbar-thumb {
 .right-column {
     margin-top: 20px;
 }
+
+.privacy-policy-section-header {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #D3461D;
+}
+
 
 /* CATERING PAGE */
 .catering-page .menu-category, .catering-header  {

@@ -796,9 +796,6 @@ body::-webkit-scrollbar-thumb {
     .product-image {
         max-width: 400px;
     }
-    /* .card-col {
-        max-width: 500px !important;
-    } */
     #franchise-lg-nav ul {
         justify-content: center;
     }

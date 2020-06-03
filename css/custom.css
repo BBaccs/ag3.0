@@ -520,8 +520,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .product-image {
-    max-width: 800px;
-}
+    max-width: 270px;
+} 
 
 .product-content-wrapper * {
     font-family: openSansRegular;
@@ -773,11 +773,11 @@ body::-webkit-scrollbar-thumb {
  }
 
 
- @media (max-width: 370px) {
+ /* @media (max-width: 370px) {
     img.product-image {
         max-width: 270px;
     } 
- }
+ } */
 
  @media (max-width: 375px) {
     .modal-wrapper-bull {

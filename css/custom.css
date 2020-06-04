@@ -241,8 +241,7 @@ button.btn.btn-primary {
    border: 1px solid #212529;
 }
 
-button,
-.sm-modal-header {
+button {
     font-size: 1.5rem;
 }
 
@@ -288,6 +287,10 @@ button,
 
 .small-btn {
     min-width: 85px;
+}
+
+.sm-modal-header {
+    font-size: 1.2rem;
 }
 
 /* HOMEPAGE */

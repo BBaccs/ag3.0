@@ -241,7 +241,8 @@ button.btn.btn-primary {
    border: 1px solid #212529;
 }
 
-button {
+button,
+.sm-modal-header {
     font-size: 1.5rem;
 }
 
@@ -404,6 +405,12 @@ button {
     width: 100%;
     position: fixed;
     top: 20%;
+}
+
+.alert-danger {
+    color: white;
+    background-color: #D3461D;
+    border-color: #CE461C;
 }
 
 /* MENU CATEGORY PAGE */

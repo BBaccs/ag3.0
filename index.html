@@ -410,35 +410,113 @@
             </div>
             <div class="modal-footer justify-content-center">
             <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-            <button data-dismiss="modal" data-toggle="modal" data-target="#pickupModal" class="btn btn-primary">Order</button>
+            <button data-dismiss="modal" data-toggle="modal" data-target="#pickupModal" class="btn btn-primary">Pickup</button>
             <span>-OR-</span>
-            <a href="#" class="btn btn-primary">Catering</a>
+            <button data-dismiss="modal" data-toggle="modal" data-target="#deliveryModal" class="btn btn-primary">Delivery</button>
             </div>
         </div>
         </div>
     </div>
 </section>
 
-  <!-- Pickup Modal -->
-  <section class="modal fade" id="pickupModal" tabindex="-1" role="dialog" aria-labelledby="pickupModalCenterTitle" aria-hidden="true">
+  <!-- Modal Pickup -->
+  <section class="modal fade" id="pickupModal" tabindex="-1" role="dialog" aria-labelledby="pickupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title sm-modal-header" id="pickupModalLabel">Choose a location for pickup</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-4">
+                <h3>WESLEY CHAPEL/LUTZ</h3>
+                <p>Across from the Tampa Premium Outlets</p>   
+                <p>25340 Sierra Center Blvd, Lutz, FL 33559</p>
+                <div>
+                    <a href="tel:813-261-0140" class="btn btn-primary small-btn">Call Wesley</a>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3>INT’L PLAZA & BAY STREET</h3>
+                <p>Located in the Food Court</p>   
+                <p>25340 Sierra Center Blvd, Lutz, FL 33559</p>
+                <div>
+                    <a href="tel:813-497-7106" class="btn btn-primary small-btn">Call INT'L Plaza</a>
+                </div>
+            </div>
+            <div class="mb-2">
+                <h3>WESTFIELD BRANDON MALL</h3>
+                <p>Located in the Food Court</p>   
+                <p>459 Brandon Town Center Dr, Brandon, FL 33511</p>
+                <div>
+                    <a href="tel:813-402-3200" class="btn btn-primary small-btn">Call Westfield</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="alert alert-danger text-uppercase">Our Online Ordering is coming soon! For now, call our stores by clicking above.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Modal Pickup -->
+  <section class="modal fade" id="pickupModal" tabindex="-1" role="dialog" aria-labelledby="pickupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title sm-modal-header" id="pickupModalLabel">Choose a location for pickup</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-header">
+                <h2 class="m-modal-header modal-title w-100 text-center ml-4 h5" id="deliveryModalTitle">Choose A Delivery Method</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                ..BOLD FLAVOR AWAITS YOU.
+            </div>
+            <div class="modal-footer justify-content-center">
+                <a href="#" class="btn btn-primary">Uber Eats</a>
+                <span>-OR-</span>
+                <a href="#" class="btn btn-primary">Door Dash</a>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="alert alert-danger text-uppercase">Our Online Ordering is coming soon! For now, call our stores by clicking above.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Modal Delivery -->
+<section class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="deliveryModalLabel" aria-hidden="true">
     <div class="modal-wrapper-bull">
         <img class="bull-cta mx-auto" src="assets/agGraphicElements/animals/bullFullMedium.png" alt="" />
-        <div class="test-modal-dialog modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog mt-0">
         <div class="modal-content">
             <div class="modal-header">
-            <h2 class="modal-title w-100 text-center ml-4 h5" id="pickupModalCenterTitle">Choose Your Delivery Method</h2>
+            <h2 class="modal-title sm-modal-header text-center w-100" id="deliveryModalLabel">Choose your delivery method</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body text-center">
-            ..BOLD FLAVOR AWAITS YOU.
+            <div class="modal-body">
+                <!-- <div class="modal-body text-center">..BOLD FLAVOR AWAITS YOU.</div> -->
+                <div class="modal-footer justify-content-center" style="border: none;">
+                    <button href="" class="btn btn-primary">Uber Eats</button>
+                    <span>-OR-</span>
+                    <a href="#" class="btn btn-primary">Door Dash</a>
+                </div>
             </div>
-            <div class="modal-footer justify-content-center">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-            <button href="#" class="btn btn-primary">PICKUP</button>
-            <span>-OR-</span>
-            <a href="#" class="btn btn-primary">DELIVERY</a>
+            <div class="modal-footer">
+                <p class="alert alert-danger">Aussie Grill's Online Ordering Website is coming soon! For now you can call our stores by clicking above.</p>
             </div>
         </div>
         </div>

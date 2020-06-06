@@ -414,6 +414,8 @@ button {
     color: white;
     background-color: #D3461D;
     border-color: #CE461C;
+    margin: auto;
+    max-width: fit-content;
 }
 
 /* MENU CATEGORY PAGE */

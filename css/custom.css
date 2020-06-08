@@ -293,6 +293,10 @@ button {
     width: 200px;
 }
 
+.pdp-lg-button {
+    width: 150px;
+}
+
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);

@@ -481,6 +481,11 @@ button {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);
 }
 
+.mobile-menu-item {
+    border-bottom: 1px solid #cacaca;
+    padding: 8px 0px;
+}
+
 .product-content-wrapper-lg {
     margin-bottom: 2rem;
     display: inline-block;
@@ -489,7 +494,6 @@ button {
 .product-description-preview {
     color: #D3461D;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #cacaca;
     font-size: 12px;
 }
 

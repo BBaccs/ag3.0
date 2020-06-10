@@ -506,6 +506,10 @@ button {
     padding-top: 30px
 }
 
+h2.pig-heading {
+    padding-left: 120px;
+}
+
 /* Scroll Bar Styling for desktop */
 body::-webkit-scrollbar {
     width: 10px;
@@ -733,6 +737,9 @@ body::-webkit-scrollbar-thumb {
     }
     .product-image {
         max-width: 270px;
+    }
+    h2.pig-heading {
+        padding-left: 110px;
     }
 }
 

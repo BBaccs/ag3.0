@@ -502,6 +502,10 @@ button {
     text-transform: uppercase;
 }
 
+.menu-page .no-subhead-padding {
+    padding-top: 30px
+}
+
 /* Scroll Bar Styling for desktop */
 body::-webkit-scrollbar {
     width: 10px;

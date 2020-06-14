@@ -301,6 +301,10 @@ button {
     display: block;
 }
 
+.primary-color {
+    color: #D3461D;
+}
+
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);

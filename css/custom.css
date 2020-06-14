@@ -183,9 +183,9 @@ button {
 
 .btn-primary {
     background-color: #D3461D;
-    border: 0px solid;
     background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
     background-size: cover;
+    font-weight: bold;
 }
 
 .btn.btn-primary:hover,

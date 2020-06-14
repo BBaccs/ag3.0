@@ -182,10 +182,10 @@ button {
 }
 
 .btn-primary {
+    border: 0px solid;
     background-color: #D3461D;
     background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
     background-size: cover;
-    font-weight: bold;
 }
 
 .btn.btn-primary:hover,

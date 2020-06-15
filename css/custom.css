@@ -689,6 +689,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Privacy Policy Pages */
 
+.privacy-page {
+    background: none;
+}
+
 .privacy-page ul,
 .privacy-page ol {
     list-style-type: none;
@@ -702,6 +706,27 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+.privacy-page li {
+    line-height: 2;
+}
+
+.privacy-page ul,
+.privacy-page ol {
+    padding: 10px;
+}
+
+.privacy-page .table-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    display: block;
+}
+
+.privacy-page .table {
+    display: table;
+}
+
+/* END Privacy Policy Pages */
 
 .left-column,
 .right-column {

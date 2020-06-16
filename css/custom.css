@@ -594,6 +594,12 @@ body::-webkit-scrollbar-thumb {
     padding: .2rem;
 }
 
+.no-img {
+    display: flex;
+    align-items: center;
+    padding: 24px 0px;
+}
+
 
 /* Landing Pages*/
 .landing-page .landing-heading {

@@ -521,6 +521,16 @@ h2.chicken-heading {
     padding-right: 100px;
 }
 
+.pig-graphic {
+    position: relative;
+    bottom: 33px;
+}
+
+.chicken-graphic {
+    position: relative;
+    bottom: 33px;
+}
+
 .homepage-subheading.small-subheading {
     font-size: 1.2rem;
 }
@@ -544,15 +554,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Item Menu Pages / PDP */
-.pig-graphic {
-    position: relative;
-    bottom: 33px;
-}
-
-.chicken-graphic {
-    position: relative;
-    bottom: 33px;
-}
 
 .menu-category {
     height: 5.75rem;

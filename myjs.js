@@ -7,24 +7,16 @@ var carouselState = false;
 
 $('.pause-button').click(function () {
   
-  if(carouselState){
-    $('.carousel').carousel('cycle');
-    console.log('cycle')
+  if(!carouselState){
+    $('#home-carousel').carousel('pause');
   } else {
-    $('.carousel').carousel('pause');
-    console.log('pause')
+    $('#home-carousel').carousel('cycle');
   }
-  // $('#home-pause').toggleClass('play-btn');
   carouselState = !carouselState;
 });
 
 // Fallback for browsers that don't support the HTML5 Picture element
 document.createElement("picture");
-
-
-
-
-
 
 
 // This bugfix was removed because the nav border was removed but it will remain here in case we decide to bring it back.

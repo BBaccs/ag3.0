@@ -309,7 +309,7 @@ button {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);
 }
 
-.homepage-subheading-wrapper {
+.primary-subheading-wrapper {
     background: url(../assets/agGraphicElements/originals/strokeOrange.png);
     background-size: cover;
     color: white;
@@ -320,15 +320,15 @@ button {
     white-space: nowrap;
 }
 
-.homepage-subheading-wrapper.xl-wrapper {
+.primary-subheading-wrapper.xl-wrapper {
     width: 80%;
 }
 
-.homepage-subheading-wrapper.xxl-wrapper {
+.primary-subheading-wrapper.xxl-wrapper {
     width: 100%;
 }
 
-.homepage-subheading {
+.primary-subheading {
     line-height: .9230769230769231em;
     margin-bottom: .125rem;
     letter-spacing: .0125rem;
@@ -339,9 +339,9 @@ button {
     text-transform: uppercase;
 }
 
-.homepage-subheading:hover,
-.homepage-subheading:focus,
-.homepage-subheading:active  {
+.primary-subheading:hover,
+.primary-subheading:focus,
+.primary-subheading:active  {
     color: white;
 }
 
@@ -531,7 +531,7 @@ h2.chicken-heading {
     bottom: 33px;
 }
 
-.homepage-subheading.small-subheading {
+.primary-subheading.small-subheading {
     font-size: 1.2rem;
 }
 

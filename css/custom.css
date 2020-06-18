@@ -407,7 +407,7 @@ button {
     height: 200px;
 }
 
-.test-modal-dialog {
+.main-modal-dialog {
     display: flex;
     justify-content: center;
     align-items: end;

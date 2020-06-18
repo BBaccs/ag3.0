@@ -123,8 +123,7 @@ footer span.rights-reserved {
 }
 
 .nav-banner,
-.cta-banner,
-.alert-danger {
+.cta-banner {
     background-color: #D3461D;
     background-image: url(../assets/agOfficialSwatches/mobile/gritDarkTransparentMobile5.png);
     background-position: bottom;
@@ -426,12 +425,12 @@ button {
     top: 20%;
 }
 
-.alert-danger {
+/* .alert-danger {
     color: white;
     border-color: #CE461C;
     margin: auto;
     max-width: fit-content;
-}
+} */
 
 /* MENU PAGES */
 .menu-page-bg,

@@ -118,6 +118,10 @@ footer span.rights-reserved {
     font-size: .75rem;
 }
 
+.desktop-footer {
+    max-width: 1200px;
+}
+
 .nav-banner,
 .cta-banner{
     background-color: #D3461D;

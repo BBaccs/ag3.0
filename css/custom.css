@@ -579,7 +579,6 @@ body::-webkit-scrollbar-thumb {
 .product-content-wrapper * {
     font-family: openSansRegular;
     font-size: .9rem;
-    text-transform: capitalize;
 }
 
 .product-content-wrapper .disclaimer {

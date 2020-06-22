@@ -507,6 +507,10 @@ button {
     font-size: 12px;
 }
 
+.product-description {
+    text-transform: initial;
+}
+
 .text-alert {
     color: #D3461D;
     text-transform: uppercase;

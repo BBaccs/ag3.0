@@ -582,7 +582,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .product-content-wrapper .disclaimer {
-    font-size: .75rem;
+    font-size: .7rem;
+    font-style: italic;
 }
 
 .product-content-wrapper .product-sides-heading {

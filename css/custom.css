@@ -129,6 +129,12 @@ footer span.rights-reserved {
     background-position: bottom;
 }
 
+.chicken-cta {
+    position: relative;
+    top: 0px;
+    left: -25px;
+}
+
 .nav-banner {
     font-size: .9rem;
 }

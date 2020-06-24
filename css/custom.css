@@ -805,9 +805,6 @@ body::-webkit-scrollbar-thumb {
     h2.pig-heading {
         padding-left: 110px;
     }
-    /* h2.chicken-heading {
-        padding-right: 110px;
-    } */
 }
 
 @media (min-width: 375px) {
@@ -816,7 +813,14 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 420px) {
+    .animal-franchise-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 420px) {
     .animal-franchise-wrapper {
         display: block;
         text-align: left;

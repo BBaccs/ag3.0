@@ -684,6 +684,69 @@ body::-webkit-scrollbar-thumb {
     overflow-x: hidden;
 }
 
+.animal-graphic {
+    position: relative;
+    bottom: 37px;
+}
+
+.aussie-board li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 81px;
+}
+
+.aussie-board h3 {
+    margin-left: 10px;
+}
+
+.aussie-board .light-bg {
+    background-color: green;
+}
+
+.aussie-board .dark-bg {
+    background-color: red;
+}
+
+.aussie-board p {
+    margin: 0px;
+}
+
+.mobile-support-section .row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mobile-support-section ul {
+    list-style-type: none;
+}
+
+.slanted-bg {
+    background-color: #D3461D;
+    height: 60px;
+    transform: skewY(-3deg);
+    z-index: 0;
+}
+
+.slanted-bg h2.landing-subheading {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transform: skewY(3deg);
+    background-color: #D3461D;
+    height: 75%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-section h3 {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
 /*We're Hiring!*/
 .landing-content-wrapper * {
     font-family: openSansRegular;
@@ -783,13 +846,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* Other */
-.animal-graphic {
-    position: relative;
-    bottom: 37px;
-}
-
-
 /* Media Queries */
 @media (max-width: 374px) { 
     .d-xsm-none {
@@ -862,6 +918,14 @@ body::-webkit-scrollbar-thumb {
         width: 55vw;
         max-width: 55vw;
     }
+    #investment-wrapper {
+        max-height: 650px;
+    }
+    #investment-wrapper .investment-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
  }
 
  @media (min-width: 992px) { 
@@ -878,6 +942,12 @@ body::-webkit-scrollbar-thumb {
     .privacy-page .table-wrapper {
         width: 100%;
         max-width: 100%;
+    }
+    .mobile-support-section {
+        display: none;
+    }
+    .vertical-food-image {
+        max-width: 150px;
     }
  }
 
@@ -901,6 +971,16 @@ body::-webkit-scrollbar-thumb {
     #investment-link {
         text-align: center;
     }   
+    .bring-up-z-index {
+        position: relative;
+        z-index: 2;
+    }   
+    .slanted-bg h2.landing-subheading {
+        transform: skewY(2deg);
+    }
+    .slanted-bg {
+        transform: skewY(-2deg);
+    }
  }
 
  @media (min-width: 1200px) {

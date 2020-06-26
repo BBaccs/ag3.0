@@ -314,6 +314,10 @@ button {
     color: #D3461D;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* HOMEPAGE */
 #homepage-container-fluid {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);
@@ -560,7 +564,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Item Menu Pages / PDP */
-
 .menu-category {
     height: 5.75rem;
 }
@@ -659,6 +662,9 @@ body::-webkit-scrollbar-thumb {
     max-width: 200px;
     line-height: 1.65;
 }
+#investment-wrapper {
+    max-height: 600px;
+}
 
 #qualifications-section li {
     margin-bottom: .5rem;
@@ -718,24 +724,31 @@ body::-webkit-scrollbar-thumb {
     padding-right: 15px;
 }
 
-.mobile-support-section ul {
+/* .mobile-support-section ul,
+.left-column nav li {
     list-style-type: none;
+} */
+
+.orange-bg {
+    background-color: #D3461D;
+    height: 60px;
 }
 
 .slanted-bg {
-    background-color: #D3461D;
-    height: 60px;
     transform: skewY(-3deg);
     z-index: 0;
 }
 
 .slanted-bg h2.landing-subheading {
+    transform: skewY(3deg);
+}
+
+.orange-bg h2.landing-subheading {
     color: white;
     font-weight: bold;
     text-align: center;
-    transform: skewY(3deg);
-    background-color: #D3461D;
     height: 75%;
+    background-color: #D3461D;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -745,9 +758,15 @@ body::-webkit-scrollbar-thumb {
 .support-section h3 {
     font-weight: bold;
     font-size: .9rem;
+    margin-bottom: 0px;
 }
 
-/*We're Hiring!*/
+#investment-wrapper .investment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .landing-content-wrapper * {
     font-family: openSansRegular;
     font-size: .8rem;
@@ -822,10 +841,6 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 3px;
     font-size: .75rem;
     width: 100%;
-}
-
-.left-column nav li {
-    list-style-type: none;
 }
 
 .right-column {
@@ -918,14 +933,6 @@ body::-webkit-scrollbar-thumb {
         width: 55vw;
         max-width: 55vw;
     }
-    #investment-wrapper {
-        max-height: 650px;
-    }
-    #investment-wrapper .investment-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
  }
 
  @media (min-width: 992px) { 
@@ -955,13 +962,6 @@ body::-webkit-scrollbar-thumb {
     .modal-wrapper-bull {
         top: 15%;
     }
- }
-
- @media (max-width: 767px) {
-     #middle-info-img {
-         margin-top: 5px;
-         margin-bottom: 5px;
-     }
  }
 
  @media (max-width: 768px) {

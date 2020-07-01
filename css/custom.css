@@ -129,10 +129,10 @@ footer span.rights-reserved {
     background-position: bottom;
 }
 
-.chicken-cta {
+.bull-cta {
     position: relative;
-    top: 0px;
-    left: -25px;
+    bottom: 5px;
+    right: 30px;
 }
 
 .nav-banner {

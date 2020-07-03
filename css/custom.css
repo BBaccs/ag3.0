@@ -25,10 +25,6 @@
     src: url(../assets/fonts/bureauGrotUltraBlack.otf);
 }
 
-/* @font-face {
-    font-family: openSansBold;
-    src: url(../assets/fonts/OpenSans-Bold.ttf);
-} */
 
 @font-face {
     font-family: openSansRegular;
@@ -717,11 +713,6 @@ body::-webkit-scrollbar-thumb {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-/* .mobile-support-section ul,
-.left-column nav li {
-    list-style-type: none;
-} */
 
 .orange-bg {
     background-color: #D3461D;

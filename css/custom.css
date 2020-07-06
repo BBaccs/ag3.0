@@ -770,14 +770,13 @@ body::-webkit-scrollbar-thumb {
 
 /* Franchise Linking */
 
-
 #why-aussie-section-anchor {
     position: relative;
     top: -30px;
 }
 #investment-section-anchor-dropdown {
     position: relative;
-    bottom: 280px;
+    bottom: 300px;
 }
 
 #investment-section-anchor {
@@ -795,8 +794,9 @@ body::-webkit-scrollbar-thumb {
 }
 #available-opportunities-anchor {
     position: relative;
-    bottom: 300px;
+    bottom: 380px;
 }
+
 
 /* Privacy Policy Pages */
 
@@ -841,6 +841,7 @@ body::-webkit-scrollbar-thumb {
     width: 95vw;
     max-width: 95vw;
 }
+
 
 /* END Privacy Policy Pages */
 
@@ -950,7 +951,7 @@ body::-webkit-scrollbar-thumb {
         max-width: 55vw;
     }
     #investment-section-anchor {
-        top: 40px;
+        top: 0px;
     }
     #contact-us-anchor {
         position: inherit;

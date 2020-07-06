@@ -772,11 +772,11 @@ body::-webkit-scrollbar-thumb {
 
 #why-aussie-section-anchor {
     position: relative;
-    top: -30px;
+    bottom: 310px;
 }
 #investment-section-anchor-dropdown {
     position: relative;
-    bottom: 300px;
+    bottom: 320px;
 }
 
 #investment-section-anchor {

@@ -950,8 +950,7 @@ body::-webkit-scrollbar-thumb {
         max-width: 55vw;
     }
     #investment-section-anchor {
-        position: relative;
-        top: 228px;
+        top: 40px;
     }
     #contact-us-anchor {
         position: inherit;

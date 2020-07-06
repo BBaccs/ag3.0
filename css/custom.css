@@ -775,17 +775,27 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     top: -30px;
 }
+#investment-section-anchor-dropdown {
+    position: relative;
+    bottom: 60px;
+}
+
 #investment-section-anchor {
     position: relative;
     bottom: 60px;
 }
+
 #support-anchor {
     position: relative;
-    top: 270px;
+    top: 290px;
 }
 #contact-us-anchor {
     position: relative;
     top: 268px;
+}
+#available-opportunities-anchor {
+    position: relative;
+    top: 210px;
 }
 
 /* Privacy Policy Pages */

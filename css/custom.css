@@ -787,7 +787,7 @@ body::-webkit-scrollbar-thumb {
 
 #support-anchor {
     position: relative;
-    top: 250px;
+    top: 247px;
 }
 #contact-us-anchor {
     position: relative;
@@ -795,7 +795,7 @@ body::-webkit-scrollbar-thumb {
 }
 #available-opportunities-anchor {
     position: relative;
-    bottom: 210px;
+    bottom: 300px;
 }
 
 /* Privacy Policy Pages */

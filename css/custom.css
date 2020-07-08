@@ -1,23 +1,13 @@
 /* FONTS */
 
 @font-face {
-    font-family: bureauGrotCondensedBlack;
-    src: url(../assets/fonts/bureauGrotCondensedBlack.otf);
-}
-
-@font-face {
     font-family: bureauGrotMedium;
     src: url(../assets/fonts/bureauGrotMedium.otf);
 }
 
 @font-face {
-    font-family: bureauGrotCondensedBook;
-    src: url(../assets/fonts/bureauGrotCondensedBook.otf);
-}
-
-@font-face {
-    font-family: bureauGrotCondensedMedium;
-    src: url(../assets/fonts/bureauGrotCondensedMedium.otf);
+    font-family: bureauGrotBook;
+    src: url(../assets/fonts/bureauGrotBook.otf);
 }
 
 @font-face {
@@ -51,7 +41,7 @@ html * {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: bureauGrotCondensedBook; 
+    font-family: bureauGrotBook; 
 }
 
 .navbar,
@@ -476,7 +466,7 @@ ul {
 .menu-page *,
 .cta-banner,
 .btn.btn-primary.cta-primary {
-    font-family: bureauGrotCondensedBook;  
+    font-family: bureauGrotBook;  
 }
 
 .select-category-bg,
@@ -758,7 +748,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .landing-content-wrapper .card-title {
-    font-family: bureauGrotCondensedMedium;
+    font-family: bureauGrotMedium;
     font-size: 1rem;
     text-transform: uppercase;
 }

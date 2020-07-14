@@ -552,7 +552,7 @@ body::-webkit-scrollbar-thumb {
 .menu-category-selected {
     background-image: url(../assets/agOfficialSwatches/mobile/agConcreteDark500x500.jpg);
     color: white;
-    margin-top: .5rem;
+    padding-top: .5rem;
 }
 
 .product-description-page h1 {

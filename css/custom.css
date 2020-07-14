@@ -512,11 +512,7 @@ h2.chicken-heading {
     padding-right: 100px;
 }
 
-.pig-graphic {
-    position: relative;
-    bottom: 41px;
-}
-
+.pig-graphic,
 .chicken-graphic {
     position: relative;
     bottom: 41px;

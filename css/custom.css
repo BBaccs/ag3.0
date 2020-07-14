@@ -1021,6 +1021,9 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
     }
 
+    .table-wrapper {
+        overflow-x: inherit;
+    }
  }
  
  @media (min-width: 1201px) {

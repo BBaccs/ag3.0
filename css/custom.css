@@ -326,7 +326,7 @@ ul {
     line-height: .9230769230769231em;
     margin-bottom: .125rem;
     letter-spacing: .0125rem;
-    font-size: 1.5rem; 
+    font-size: 1.15rem; 
     text-align: center;
     margin-bottom: 1rem !important;
     margin-top: 1rem !important;
@@ -452,7 +452,7 @@ ul {
 .menu-page h4 {
     padding: 1.25rem .5rem;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .menu-page li:active {
@@ -488,6 +488,7 @@ ul {
     color: #D3461D;
     padding-bottom: 1rem;
     font-size: 12px;
+    padding-top: 5px;
 }
 
 .product-description {
@@ -522,7 +523,7 @@ h2.chicken-heading {
 }
 
 .primary-subheading.small-subheading {
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 
 /* Scroll Bar Styling for desktop */
@@ -551,11 +552,12 @@ body::-webkit-scrollbar-thumb {
 .menu-category-selected {
     background-image: url(../assets/agOfficialSwatches/mobile/agConcreteDark500x500.jpg);
     color: white;
+    margin-top: .5rem;
 }
 
 .product-description-page h1 {
     color: #D3461D;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .product-description-page span {
@@ -757,6 +759,10 @@ body::-webkit-scrollbar-thumb {
     width: 155px;
 }
 
+#pickup-page .landing-content-wrapper a,
+#pickup-page .landing-content-wrapper button {
+    font-size: .7rem;
+}
 
 /* Franchise Linking */
 

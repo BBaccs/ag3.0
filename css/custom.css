@@ -870,7 +870,7 @@ body::-webkit-scrollbar-thumb {
     color: #D3461D;
 }
 
-.xxl-buttons li {
+.xxl-buttons li a {
     background-position: bottom;
 }
 

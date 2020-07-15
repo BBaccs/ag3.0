@@ -385,7 +385,6 @@ ul {
 
 .button.carousel-button {
     position: relative;
-    height: 16px;
     right: 55px;
     border-color: #D4461D;
     color: #D4461D;
@@ -395,6 +394,7 @@ ul {
     border-style: double;
     border-width: 0px 0px 0px 10px;
     top: 30px;
+    height: 16px;
 }
 
 .button.play-button {

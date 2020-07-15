@@ -383,14 +383,23 @@ ul {
     list-style: none;
 }
 
+.button.pause-button,
+.button.play-button {
+    position: relative;
+    height: 16px;
+    right: 55px;
+    border-color: #D4461D;
+    color: #D4461D;
+}
+
 .button.pause-button {
     border-style: double;
     border-width: 0px 0px 0px 10px;
-    border-color: #D4461D;
-    position: relative;
-    height: 16px;
-    bottom: -30px;
-    right: 55px;
+    top: 30px;
+}
+
+.button.play-button {
+    top: 18px;
 }
 
 .card-img {

@@ -870,6 +870,9 @@ body::-webkit-scrollbar-thumb {
     color: #D3461D;
 }
 
+.xxl-buttons li {
+    background-position: bottom;
+}
 
 /* CATERING PAGE */
 .catering-page .menu-category, .catering-header  {

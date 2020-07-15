@@ -383,8 +383,7 @@ ul {
     list-style: none;
 }
 
-.button.pause-button,
-.button.play-button {
+.button.carousel-button {
     position: relative;
     height: 16px;
     right: 55px;
@@ -399,7 +398,7 @@ ul {
 }
 
 .button.play-button {
-    top: 18px;
+    bottom: -38px;
 }
 
 .card-img {

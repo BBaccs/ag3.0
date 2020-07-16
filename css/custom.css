@@ -401,6 +401,10 @@ ul {
     bottom: -38px;
 }
 
+#catering-carousel .play-button {
+    right: 45px;
+}
+
 .card-img {
     height: 200px;
 }

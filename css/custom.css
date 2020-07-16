@@ -530,6 +530,14 @@ h2.chicken-heading {
     font-size: .9rem;
 }
 
+.menu-category.menu-category-selected .lg-selected-heading {
+    position: relative;
+    left: 65px;
+    width: 100% !important;
+    padding-left: 0px;
+}
+
+
 /* Scroll Bar Styling for desktop */
 body::-webkit-scrollbar {
     width: 10px;

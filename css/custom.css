@@ -320,6 +320,7 @@ ul {
 
 .primary-subheading-wrapper.xxl-wrapper {
     width: 100%;
+    max-width: 400px;
 }
 
 .primary-subheading {

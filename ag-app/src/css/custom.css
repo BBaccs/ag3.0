@@ -13,6 +13,14 @@ body {
     text-align: left;
 }
 
+html * {
+    font-family: bureauGrotMedium;    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: bureauGrotBook; 
+}
+
 .navbar,
 .nav-banner,
 h1,h2,h3,h4,h5,h6,
@@ -445,6 +453,12 @@ ul {
     border-color: #CE461C;
 }
 
+.menu-page *,
+.cta-banner,
+.btn.btn-primary.cta-primary {
+    font-family: bureauGrotBook;  
+}
+
 .select-category-bg,
 .menu-item-bg {
     background-image: url(../assets/agOfficialSwatches/mobile/agButcherPaperUpdated500x500.png);
@@ -545,6 +559,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .product-content-wrapper * {
+    font-family: openSansRegular;
     font-size: .9rem;
 }
 
@@ -575,6 +590,7 @@ body::-webkit-scrollbar-thumb {
 .landing-page .landing-heading {
     color: #D3461D;
     font-size: 1rem;
+    font-family: bureauGrotUltraBlack;
     text-transform: uppercase;
 }
 
@@ -723,10 +739,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .landing-content-wrapper * {
+    font-family: openSansRegular;
     font-size: .8rem;
 }
 
 .landing-content-wrapper .card-title {
+    font-family: bureauGrotMedium;
     font-size: 1rem;
     text-transform: uppercase;
 }

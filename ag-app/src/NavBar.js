@@ -1,8 +1,26 @@
 import React, { Component } from "react";
 import { MenuItems } from './MenuItems';
+import { SocialMenuItems } from './SocialMenuItems';
 
 class NavBar extends Component {
+  // static defaultProps = {
+
+  // };
+
+  constructor(props) {
+    super(props);
+    this.state = { hamburgerOpen: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = () => {
+    this.setState(st => ({
+      hamburgerOpen: !st.hamburgerOpen
+    }));
+  }
+
   render() {
+    
     return (
       <div>
         <a
@@ -16,27 +34,13 @@ class NavBar extends Component {
           <div className="d-flex justify-content-center align-items-center">
             <span className="mr-2">Follow the Adventure on</span>
             <ul className="social-links d-flex mb-1 pl-0">
-              <li>
-                <a
-                  href="https://www.facebook.com/Aussie-Grill-by-Outback-381611752680353/"
-                  className="fa fa-lg fa-facebook"
-                  aria-label="View our Facebook"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/AussieGrill_"
-                  className="fa fa-lg fa-twitter mx-2"
-                  aria-label="View our Twitter"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/aussiegrillbyoutback/"
-                  aria-label="View our Instagram"
-                  className="fa fa-lg fa-instagram"
-                ></a>
-              </li>
+              { SocialMenuItems.map((item,index) => {
+                return (
+                  <li key={index}>
+                  <a href={item.url} className={item.cName} aria-label={item.ariaLabel} />
+                </li>
+                )
+              }) }
             </ul>
           </div>
         </div>
@@ -44,13 +48,13 @@ class NavBar extends Component {
         <div className="sticky-top nav-border">
           <nav className="navbar navbar-dark bg-ag-dark">
             <div className="container-lg d-flex nav-inner-wrapper">
-              <button
-                className="navbar-toggler d-md-none d-lg-none d-xl-none"
+              <button onClick={ this.handleClick }
+                className={`navbar-toggler d-md-none d-lg-none d-xl-none ${this.state.hamburgerOpen ? 'collapsed' : ''}`}
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarToggleExternalContent"
                 aria-controls="navbarToggleExternalContent"
-                aria-expanded="false"
+                aria-expanded={ this.state.hamburgerOpen }
                 aria-label="Toggle navigation"
               >
                 <span className="navbar-toggler-icon"></span>
@@ -65,7 +69,7 @@ class NavBar extends Component {
               <a aria-label="Naviagte to homepage" href="index.html">
                 <picture>
                   <source
-                    srcset="/assets/other/mobile/agLogoLarge.png"
+                    srcSet="/assets/other/mobile/agLogoLarge.png"
                     media="(min-width: 1024px)"
                   />
                   <img
@@ -77,58 +81,14 @@ class NavBar extends Component {
               </a>
             </div>
           </nav>
-          <div className="collapse" id="navbarToggleExternalContent">
+          <div className={`${this.state.hamburgerOpen ? 'show' : 'collapse'}`} id="navbarToggleExternalContent">
             <div className="bg-ag-dark p-4">
               <ul className="nav d-flex flex-column">
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="pages/mainMenu/menuCategory.html"
-                  >
-                    Menu
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="pages/otherPages/pickup.html">
-                    Order
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="pages/catering/cateringMenu/menuCategory.html"
-                  >
-                    Catering
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="pages/otherPages/ourStory.html">
-                    Our Story
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="pages/otherPages/careers.html">
-                    Careers
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="pages/otherPages/franchise.html"
-                  >
-                    Franchise
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="pages/otherPages/pickup.html">
-                    Locations
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="pages/otherPages/contact.html">
-                    Contact
-                  </a>
-                </li>
+              {MenuItems.map((item,index) => {
+                  return (
+                  <li key={index} className={item.liCName, item.mobileLiCName}><a className={item.cName} href={item.url}>{item.title}</a></li>
+                  )
+                })}
               </ul>
             </div>
           </div>

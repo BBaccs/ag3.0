@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { MenuItems } from './MenuItems';
-import { SocialMenuItems } from './SocialMenuItems';
+import { MenuItems } from "./MenuItems";
+import { SocialMenuItems } from "./SocialMenuItems";
 
 class NavBar extends Component {
-  // static defaultProps = {
-
-  // };
+  static defaultProps = {
+    alertBar: true,
+  };
 
   constructor(props) {
     super(props);
@@ -14,13 +14,35 @@ class NavBar extends Component {
   }
 
   handleClick = () => {
-    this.setState(st => ({
-      hamburgerOpen: !st.hamburgerOpen
+    this.setState((st) => ({
+      hamburgerOpen: !st.hamburgerOpen,
     }));
-  }
+  };
 
   render() {
-    
+    const alertBar = this.props.alertBar ? (
+      <div className="py-2 nav-banner text-white">
+        <div className="d-flex justify-content-center align-items-center">
+          <span className="mr-2">Follow the Adventure on</span>
+          <ul className="social-links d-flex mb-1 pl-0">
+            {SocialMenuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a
+                    href={item.url}
+                    className={item.cName}
+                    aria-label={item.ariaLabel}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    ) : (
+      ""
+    );
+
     return (
       <div>
         <a
@@ -30,40 +52,34 @@ class NavBar extends Component {
           Skip to main content
         </a>
 
-        <div className="py-2 nav-banner text-white">
-          <div className="d-flex justify-content-center align-items-center">
-            <span className="mr-2">Follow the Adventure on</span>
-            <ul className="social-links d-flex mb-1 pl-0">
-              { SocialMenuItems.map((item,index) => {
-                return (
-                  <li key={index}>
-                  <a href={item.url} className={item.cName} aria-label={item.ariaLabel} />
-                </li>
-                )
-              }) }
-            </ul>
-          </div>
-        </div>
+        {alertBar}
 
         <div className="sticky-top nav-border">
           <nav className="navbar navbar-dark bg-ag-dark">
             <div className="container-lg d-flex nav-inner-wrapper">
-              <button onClick={ this.handleClick }
-                className={`navbar-toggler d-md-none d-lg-none d-xl-none ${this.state.hamburgerOpen ? 'collapsed' : ''}`}
+              <button
+                onClick={this.handleClick}
+                className={`navbar-toggler d-md-none d-lg-none d-xl-none ${
+                  this.state.hamburgerOpen ? "collapsed" : ""
+                }`}
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarToggleExternalContent"
                 aria-controls="navbarToggleExternalContent"
-                aria-expanded={ this.state.hamburgerOpen }
+                aria-expanded={this.state.hamburgerOpen}
                 aria-label="Toggle navigation"
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
               <ul className="nav nav-uncollapsed ml-2 ag-nav">
-                {MenuItems.map((item,index) => {
+                {MenuItems.map((item, index) => {
                   return (
-                  <li key={index} className={item.liCName}><a className={item.cName} href={item.url}>{item.title}</a></li>
-                  )
+                    <li key={index} className={item.liCName}>
+                      <a className={item.cName} href={item.url}>
+                        {item.title}
+                      </a>
+                    </li>
+                  );
                 })}
               </ul>
               <a aria-label="Naviagte to homepage" href="index.html">
@@ -81,13 +97,23 @@ class NavBar extends Component {
               </a>
             </div>
           </nav>
-          <div className={`${this.state.hamburgerOpen ? 'show' : 'collapse'}`} id="navbarToggleExternalContent">
+          <div
+            className={`${this.state.hamburgerOpen ? "show" : "collapse"}`}
+            id="navbarToggleExternalContent"
+          >
             <div className="bg-ag-dark p-4">
               <ul className="nav d-flex flex-column">
-              {MenuItems.map((item,index) => {
+                {MenuItems.map((item, index) => {
                   return (
-                  <li key={index} className={item.liCName, item.mobileLiCName}><a className={item.cName} href={item.url}>{item.title}</a></li>
-                  )
+                    <li
+                      key={index}
+                      className={(item.liCName, item.mobileLiCName)}
+                    >
+                      <a className={item.cName} href={item.url}>
+                        {item.title}
+                      </a>
+                    </li>
+                  );
                 })}
               </ul>
             </div>

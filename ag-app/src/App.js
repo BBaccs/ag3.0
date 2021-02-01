@@ -14,7 +14,7 @@ function App() {
       />
       <main>
         <Menu menuPage={true} />
-        <Menu menuPage={false} />
+        {/* <Menu menuPage={false} /> */}
       </main>
     </div>
   );

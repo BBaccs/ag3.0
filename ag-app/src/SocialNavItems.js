@@ -1,4 +1,4 @@
-export const SocialMenuItems = [
+export const SocialNavItems = [
   {
     ariaLabel: 'Facebook',
     url: 'https://www.facebook.com/Aussie-Grill-by-Outback-381611752680353/',

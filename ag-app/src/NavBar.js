@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { MenuItems } from "./MenuItems";
-import { SocialMenuItems } from "./SocialMenuItems";
+import { NavItems } from "./NavItems";
+import { SocialNavItems } from "./SocialNavItems";
 
 class NavBar extends Component {
   static defaultProps = {
@@ -25,7 +25,7 @@ class NavBar extends Component {
         <div className="d-flex justify-content-center align-items-center">
           <span className="mr-2">Follow the Adventure on</span>
           <ul className="social-links d-flex mb-1 pl-0">
-            {SocialMenuItems.map((item, index) => {
+            {SocialNavItems.map((item, index) => {
               return (
                 <li key={index}>
                   <a
@@ -72,7 +72,7 @@ class NavBar extends Component {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <ul className="nav nav-uncollapsed ml-2 ag-nav">
-                {MenuItems.map((item, index) => {
+                {NavItems.map((item, index) => {
                   return (
                     <li key={index} className={item.liCName}>
                       <a className={item.cName} href={item.url}>
@@ -103,7 +103,7 @@ class NavBar extends Component {
           >
             <div className="bg-ag-dark p-4">
               <ul className="nav d-flex flex-column">
-                {MenuItems.map((item, index) => {
+                {NavItems.map((item, index) => {
                   return (
                     <li
                       key={index}

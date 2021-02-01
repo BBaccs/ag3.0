@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import MenuItem from "./MenuItem";
 
 class Menu extends Component {
+  defaultProps = {
+    menuPage: true
+  }
   render() {
     return (
+      this.props.menuPage ? 
       <div>
         {/* <!-- Start Menu Item Row--> */}
         <div class="row px-lg-4 justify-content-center">
@@ -60,7 +64,7 @@ class Menu extends Component {
         </div>
         {/* <!-- End Menu Item Row-->
 
-            <!-- Start Card Row--> */}
+        <!-- Start Card Row--> */}
         <div class="row mt-lg-4 px-lg-2 card-col">
           <div class="col-lg-4 col-md-6 m-md-auto mt-4 pt-3 card-col">
             <MenuItem
@@ -94,6 +98,7 @@ class Menu extends Component {
         </div>
         {/* <!-- End Card Row--> */}
       </div>
+      : ''
     );
   }
 }

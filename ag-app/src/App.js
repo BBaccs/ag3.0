@@ -13,7 +13,8 @@ function App() {
         src={'/assets/other/mobile/ourStory345x200.jpg'} 
       />
       <main>
-        <Menu />
+        <Menu menuPage={true} />
+        <Menu menuPage={false} />
       </main>
     </div>
   );

@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 
-class Menuitem extends Component {
+class MenuItem extends Component {
   static defaultProps = {
-    // ariaLabel: `${this.title}`
     imgFilePath: 'foodImages/productImages',
-    cta: false,
     imgType: 'jpg'
   };
 
-  // constructor(props) {
-  //   super(props);
-  // }
   render() {
     return (
       <div class="col-lg-4 col-md-6 mt-4 mt-md-0 pt-3 pt-md-0 menu-item-col">
@@ -31,7 +26,7 @@ class Menuitem extends Component {
             />
             <img
               class="w-100 menu-item-img"
-              src={`assets/${this.props.imgFilePath}/mobile/${this.props.img}345x260.${this.props.imgType}`}
+              src={`/assets/${this.props.imgFilePath}/mobile/${this.props.img}345x260.${this.props.imgType}`}
               alt=""
             />
           </picture>
@@ -49,4 +44,4 @@ class Menuitem extends Component {
   }
 }
 
-export default Menuitem;
+export default MenuItem;

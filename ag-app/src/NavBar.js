@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { NavItems } from "./NavItems";
 import { SocialNavItems } from "./SocialNavItems";
+import { NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   static defaultProps = {
     alertBar: true,
+    navData: NavItems,
+    catering: false,
+    pickup: false,
   };
 
   constructor(props) {
@@ -72,17 +76,58 @@ class NavBar extends Component {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <ul className="nav nav-uncollapsed ml-2 ag-nav">
-                {NavItems.map((item, index) => {
-                  return (
-                    <li key={index} className={item.liCName}>
-                      <a className={item.cName} href={item.url}>
-                        {item.title}
-                      </a>
-                    </li>
-                  );
-                })}
+                {/* {!this.props.catering ? 
+                  this.props.navData.map((item, index) => {
+                    return (
+                      <li key={index} className={item.liCName}>
+                        <NavLink className={item.cName} to={item.url}>
+                          {item.title}
+                        </NavLink>
+                      </li>
+                    );
+                  })
+                  :
+                  this.props.navData.map((item, index) => {
+                    return (
+                      <li key={index} className={item.liCName}>
+                        <NavLink className={item.cName} to={item.url} target={item.target}>
+                          {item.title}
+                        </NavLink>
+                      </li>
+                    );
+                  })
+              } */}
+
+                {!this.props.pickup
+                  ? this.props.navData.map((item, index) => {
+                      console.log(item, index);
+                      const locationsLink = item.title.indexOf('Locations');
+                      if (locationsLink > -1) {
+                        this.props.navData.splice(locationsLink, 1);
+                      }
+                      return (
+                        <li key={index} className={item.liCName}>
+                          <NavLink className={item.cName} to={item.url}>
+                            {item.title}
+                          </NavLink>
+                        </li>
+                      );
+                    })
+                  : this.props.navData.map((item, index) => {
+                      return (
+                        <li key={index} className={item.liCName}>
+                          <NavLink
+                            className={item.cName}
+                            to={item.url}
+                            target={item.target}
+                          >
+                            {item.title}
+                          </NavLink>
+                        </li>
+                      );
+                    })}
               </ul>
-              <a aria-label="Naviagte to homepage" href="index.html">
+              <NavLink aria-label="Naviagte to homepage" to="/">
                 <picture>
                   <source
                     srcSet="/assets/other/mobile/agLogoLarge.png"
@@ -94,7 +139,7 @@ class NavBar extends Component {
                     alt="Aussie Grill"
                   />
                 </picture>
-              </a>
+              </NavLink>
             </div>
           </nav>
           <div
@@ -103,15 +148,15 @@ class NavBar extends Component {
           >
             <div className="bg-ag-dark p-4">
               <ul className="nav d-flex flex-column">
-                {NavItems.map((item, index) => {
+                {this.props.navData.map((item, index) => {
                   return (
                     <li
                       key={index}
                       className={(item.liCName, item.mobileLiCName)}
                     >
-                      <a className={item.cName} href={item.url}>
+                      <NavLink className={item.cName} to={item.url}>
                         {item.title}
-                      </a>
+                      </NavLink>
                     </li>
                   );
                 })}

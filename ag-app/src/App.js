@@ -1,20 +1,46 @@
-import NavBar from './NavBar';
-import HeroImg from './HeroImg';
-import Menu from './Menu';
-import './css/custom.css';
+import { Route, Switch } from "react-router-dom";
+import NavBar from "./NavBar";
+import HeroImg from "./HeroImg";
+import Menu from "./Menu";
+import "./css/custom.css";
+import { HomeMenuItemsData } from "./HomeMenuItemsData";
+import { NavItems } from "./NavItems";
+import { FranchiseNavItems } from "./FranchiseNavItems";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <HeroImg 
-        desktopSrc={'/assets/other/desktop/ourStory2000x600.jpg'} 
-        tabletSrc={'/assets/other/desktop/ourStory1024x500.jpg'} 
-        src={'/assets/other/mobile/ourStory345x200.jpg'} 
+        <Switch>
+        <Route exact path="/pages/otherPages/franchise.html" render={() => (
+            <NavBar navData={FranchiseNavItems} />
+          )} />
+          <Route path="/pages/catering" render={() => (
+            <NavBar navData={NavItems} catering={true} />
+          )}/>
+        <Route path="/" render={() => (
+            <NavBar navData={NavItems} />
+          )} />
+          <Route exact path="/pickup.html" render={() => (
+            <NavBar navData={NavItems} catering={true} />
+          )} />
+        </Switch>
+        <Route
+          exact path="/pages/menu/index.html"
+          render={() => (
+            <div>
+              <main>
+                <HeroImg img={"freestanding"} />
+                <Menu menuPage={true} menuData={HomeMenuItemsData} />
+              </main>
+            </div>
+          )}
+        />
+
+      <HeroImg
+        img={"ourStory"}
       />
       <main>
-        <Menu menuPage={true} />
-        {/* <Menu menuPage={false} /> */}
+        <Menu menuPage={true} menuData={HomeMenuItemsData}/>
       </main>
     </div>
   );

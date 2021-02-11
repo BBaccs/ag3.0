@@ -17,11 +17,11 @@ function App() {
           <Route path="/pages/catering" render={() => (
             <NavBar navData={NavItems} catering={true} />
           )}/>
+          <Route exact path="/pages/otherPages/pickup.html" render={() => (
+            <NavBar navData={NavItems} pickup={true} />
+          )} />
         <Route path="/" render={() => (
             <NavBar navData={NavItems} />
-          )} />
-          <Route exact path="/pickup.html" render={() => (
-            <NavBar navData={NavItems} catering={true} />
           )} />
         </Switch>
         <Route

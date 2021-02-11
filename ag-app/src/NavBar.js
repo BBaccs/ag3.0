@@ -8,7 +8,7 @@ class NavBar extends Component {
     alertBar: true,
     navData: NavItems,
     catering: false,
-    pickup: false,
+    pickup: false
   };
 
   constructor(props) {
@@ -24,6 +24,15 @@ class NavBar extends Component {
   };
 
   render() {
+    let newArr = [];
+    this.props.navData.map((item, index) => {
+      
+      if(item.title === "Order") {
+        this.props.navData.splice(index, 1);
+      }
+      newArr.push(item);
+    })
+
     const alertBar = this.props.alertBar ? (
       <div className="py-2 nav-banner text-white">
         <div className="d-flex justify-content-center align-items-center">
@@ -76,7 +85,7 @@ class NavBar extends Component {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <ul className="nav nav-uncollapsed ml-2 ag-nav">
-                {/* {!this.props.catering ? 
+                {!this.props.catering ? 
                   this.props.navData.map((item, index) => {
                     return (
                       <li key={index} className={item.liCName}>
@@ -96,15 +105,10 @@ class NavBar extends Component {
                       </li>
                     );
                   })
-              } */}
+              }
 
-                {!this.props.pickup
+                {/* {this.props.pickup
                   ? this.props.navData.map((item, index) => {
-                      console.log(item, index);
-                      const locationsLink = item.title.indexOf('Locations');
-                      if (locationsLink > -1) {
-                        this.props.navData.splice(locationsLink, 1);
-                      }
                       return (
                         <li key={index} className={item.liCName}>
                           <NavLink className={item.cName} to={item.url}>
@@ -113,7 +117,7 @@ class NavBar extends Component {
                         </li>
                       );
                     })
-                  : this.props.navData.map((item, index) => {
+                  : newArr.map((item, index) => {
                       return (
                         <li key={index} className={item.liCName}>
                           <NavLink
@@ -125,7 +129,7 @@ class NavBar extends Component {
                           </NavLink>
                         </li>
                       );
-                    })}
+                    })} */}
               </ul>
               <NavLink aria-label="Naviagte to homepage" to="/">
                 <picture>

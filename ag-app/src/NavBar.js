@@ -1,3 +1,4 @@
+// Should this be solved w/ state?
 import React, { Component } from "react";
 import { NavItems } from "./NavItems";
 import { SocialNavItems } from "./SocialNavItems";
@@ -24,15 +25,6 @@ class NavBar extends Component {
   };
 
   render() {
-    let newArr = [];
-    this.props.navData.map((item, index) => {
-      
-      if(item.title === "Order") {
-        this.props.navData.splice(index, 1);
-      }
-      newArr.push(item);
-    })
-
     const alertBar = this.props.alertBar ? (
       <div className="py-2 nav-banner text-white">
         <div className="d-flex justify-content-center align-items-center">
@@ -108,7 +100,7 @@ class NavBar extends Component {
               }
 
                 {/* {this.props.pickup
-                  ? this.props.navData.map((item, index) => {
+                  ? this.state.stateNavData.map((item, index) => {
                       return (
                         <li key={index} className={item.liCName}>
                           <NavLink className={item.cName} to={item.url}>
@@ -117,7 +109,10 @@ class NavBar extends Component {
                         </li>
                       );
                     })
-                  : newArr.map((item, index) => {
+                  : this.state.stateNavData.map((item, index) => {
+                      if(item.title === "Order") {
+                        this.state.stateNavData.splice(index, 1);
+                      }
                       return (
                         <li key={index} className={item.liCName}>
                           <NavLink

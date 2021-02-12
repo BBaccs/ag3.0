@@ -4,44 +4,47 @@ import HeroImg from "./HeroImg";
 import Menu from "./Menu";
 import "./css/custom.css";
 import { HomeMenuItemsData } from "./HomeMenuItemsData";
-import { NavItems } from "./NavItems";
 import { FranchiseNavItems } from "./FranchiseNavItems";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
-        <Switch>
-        <Route exact path="/pages/otherPages/franchise.html" render={() => (
-            <NavBar navData={FranchiseNavItems} />
-          )} />
-          <Route path="/pages/catering" render={() => (
-            <NavBar navData={NavItems} catering={true} />
-          )}/>
-          <Route exact path="/pages/otherPages/pickup.html" render={() => (
-            <NavBar navData={NavItems} pickup={true} />
-          )} />
-        <Route path="/" render={() => (
-            <NavBar navData={NavItems} />
-          )} />
-        </Switch>
+      <Switch>
         <Route
-          exact path="/pages/menu/index.html"
-          render={() => (
-            <div>
-              <main>
-                <HeroImg img={"freestanding"} />
-                <Menu menuPage={true} menuData={HomeMenuItemsData} />
-              </main>
-            </div>
-          )}
+          exact
+          path="/pages/otherPages/franchise.html"
+          render={() => <NavBar navData={FranchiseNavItems} />}
         />
-
-      <HeroImg
-        img={"ourStory"}
+        <Route
+          path="/pages/catering"
+          render={() => <NavBar catering={true} />}
+        />
+        <Route
+          exact
+          path="/pages/otherPages/pickup.html"
+          render={() => <NavBar pickup={true} />}
+        />
+        <Route path="/" render={() => <NavBar />} />
+      </Switch>
+      <Route
+        exact
+        path="/pages/menu/index.html"
+        render={() => (
+          <div>
+            <main>
+              <HeroImg img={"freestanding"} />
+              <Menu menuPage={true} menuData={HomeMenuItemsData} />
+            </main>
+          </div>
+        )}
       />
+
+      <HeroImg img={"ourStory"} />
       <main>
-        <Menu menuPage={true} menuData={HomeMenuItemsData}/>
+        <Menu menuPage={true} menuData={HomeMenuItemsData} />
       </main>
+            <Footer />
     </div>
   );
 }

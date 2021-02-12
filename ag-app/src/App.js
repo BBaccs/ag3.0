@@ -36,7 +36,9 @@ function App() {
           <div>
             <main>
               <HeroImg img={"freestanding"} />
+              <Menu menuPage={true} menuData={MenuCategoryData} mobile={true} />
               <Menu menuPage={true} menuData={MenuCategoryData} />
+              
             </main>
           </div>
         )}
@@ -44,7 +46,7 @@ function App() {
 
       <HeroImg img={"ourStory"} />
       <main>
-        <Menu menuPage={true} menuData={MenuCategoryData} />
+        <Menu menuPage={true} menuData={MenuCategoryData} mobile={true}/>
         <Menu menuPage={true} menuData={NotAMenuData} />
       </main>
       <Footer />

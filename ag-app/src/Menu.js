@@ -5,7 +5,6 @@ import MenuItem from "./MenuItem";
 class Menu extends Component {
   defaultProps = {
     menuPage: true,
-    menuData: [],
     srOnlyMenuTitle: 'test',
     srOnlyHeaderLevel: 'h1'
   };
@@ -69,7 +68,7 @@ class Menu extends Component {
             </div>
         </div>
   </div>
-
+{/* 
   <div class="d-lg-none">
     <ul>
       <li>
@@ -103,7 +102,7 @@ class Menu extends Component {
         </a>
       </li>
     </ul>
-  </div>
+  </div> */}
 </div>
   
     );

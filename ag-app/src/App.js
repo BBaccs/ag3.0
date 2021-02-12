@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom";
-import { MenuCategoryData } from "./MenuCategoryData";
+import { MenuCategoryData } from "./assets/data/menuData/MenuCategoryData";
 import { FranchiseNavItems } from "./FranchiseNavItems";
+import { NotAMenuData } from "./assets/data/menuData/NotAMenuData";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -44,6 +45,7 @@ function App() {
       <HeroImg img={"ourStory"} />
       <main>
         <Menu menuPage={true} menuData={MenuCategoryData} />
+        <Menu menuPage={true} menuData={NotAMenuData} />
       </main>
       <Footer />
     </div>

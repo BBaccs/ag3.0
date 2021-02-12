@@ -5,7 +5,7 @@ import MenuItem from "./MenuItem";
 class Menu extends Component {
   defaultProps = {
     menuPage: true,
-    menuData: '',
+    menuData: [],
     srOnlyMenuTitle: 'test',
     srOnlyHeaderLevel: 'h1'
   };

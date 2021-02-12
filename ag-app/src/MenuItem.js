@@ -8,7 +8,7 @@ class MenuItem extends Component {
 
   render() {
     return (
-      <div class="col-lg-4 col-md-6 mt-4 mt-md-0 pt-3 pt-md-0 menu-item-col">
+      <div class={'col-lg-4 col-md-6 mt-4 mt-md-0 pt-3 pt-md-0 menu-item-col'}>
       <a
         aria-label={`View ${this.props.title}`}
         href={`${this.props.src}`}

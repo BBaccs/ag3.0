@@ -1,4 +1,4 @@
-export const HomeMenuItemsData = [
+export const MenuCategoryData = [
   [
     {
       title: 'Handhelds',

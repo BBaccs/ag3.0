@@ -28,16 +28,18 @@ class Menu extends Component {
       <div className="menu-category menu-category-selected">
         <div className="d-flex justify-content-center">
           <div className="d-flex align-items-center w-100 flex-column pb-1">
-            <h1 className="h2 pb-1">{this.props.menuTitle}</h1>
             {this.props.menuSubtitle ? (
+              <div>
+                <h1 className="h2 pb-1">{this.props.menuTitle}</h1>
               <p
                 className="mt-0 pb-3 primary-color"
                 style={{ fontSize: ".7rem" }}
               >
-                100% USDA CHOICE BEEF
+                {this.props.menuSubtitle}
               </p>
+              </div>
             ) : (
-              ""
+              <h1 className="h2 no-subhead-padding">{this.props.menuTitle}</h1>
             )}
           </div>
           <img

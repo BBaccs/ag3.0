@@ -34,8 +34,8 @@ function App() {
             <div>
               <main>
                 <HeroImg img={"freestanding"} />
-                <Menu menuData={HandheldData} backButton={true} menuTitle={'Handhelds'} menuSubtitle={'100% USDA BEEF'} />
-                {/* <Menu menuData={HandheldData} backButton={true} menuTitle={'Large Plates'} /> */}
+                <Menu menuData={HandheldData} backButton={true} menuTitle={'Handhelds'} menuSubtitle={'100% USDA CHOICE BEEF'} />
+                <Menu menuData={HandheldData} backButton={true} menuTitle={'Large Plates'} />
               </main>
             </div>
           )}

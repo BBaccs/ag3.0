@@ -34,8 +34,33 @@ function App() {
             <div>
               <main>
                 <HeroImg img={"freestanding"} />
-                <Menu menuData={HandheldData} backButton={true} menuTitle={'Handhelds'} menuSubtitle={'100% USDA CHOICE BEEF'} />
-                <Menu menuData={HandheldData} backButton={true} menuTitle={'Large Plates'} />
+                <Menu
+                  menuData={HandheldData}
+                  backButton={true}
+                  menuTitle={"Handhelds"}
+                  menuSubtitle={"100% USDA CHOICE BEEF"}
+                />
+                <Menu
+                  menuData={HandheldData}
+                  backButton={true}
+                  menuTitle={"Large Plates"}
+                />
+              </main>
+            </div>
+          )}
+        />
+        <Route
+          exact
+          path="/pages/mainMenu/menuCategories/largeplates.html"
+          render={() => (
+            <div>
+              <main>
+                <HeroImg img={"freestanding"} />
+                <Menu
+                  menuData={HandheldData}
+                  backButton={true}
+                  menuTitle={"Large Plates"}
+                />
               </main>
             </div>
           )}
@@ -60,8 +85,8 @@ function App() {
       <main>
         <Menu homePage={true} menuData={MenuCategoryData} backButton={true} />
         <Menu homePage={true} menuData={NotAMenuData} backButton={false} />
-      </main>
-      <Footer /> */}
+      </main> */}
+
       <Footer />
     </div>
   );

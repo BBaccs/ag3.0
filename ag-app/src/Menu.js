@@ -5,14 +5,51 @@ import { NavLink } from "react-router-dom";
 
 class Menu extends Component {
   defaultProps = {
-    menuPage: false,
+    homePage: false,
     srOnlyMenuTitle: "test",
     srOnlyHeaderLevel: "h1",
     backButton: true,
+    menuTitle: "",
+    menuSubtitle: "",
   };
 
   render() {
-    return this.props.menuPage ? (
+    const backButton = (
+      <div className="select-category-bg">
+        <a href="/ag3.0/pages/mainMenu/menuCategory.html">
+          <div className="d-flex">
+            <div className="h1 w-100 py-4 my-1">Select New Category ^</div>
+          </div>
+        </a>
+      </div>
+    );
+
+    const menuCategory = (
+      <div className="menu-category menu-category-selected">
+        <div className="d-flex justify-content-center">
+          <div className="d-flex align-items-center w-100 flex-column pb-1">
+            <h1 className="h2 pb-1">{this.props.menuTitle}</h1>
+            {this.props.menuSubtitle ? (
+              <p
+                className="mt-0 pb-3 primary-color"
+                style={{ fontSize: ".7rem" }}
+              >
+                100% USDA CHOICE BEEF
+              </p>
+            ) : (
+              ""
+            )}
+          </div>
+          <img
+            className="animal-graphic d-lg-none"
+            src="/assets/agGraphicElements/animals/mobile/agPigVectorSmall.png"
+            alt=""
+          />
+        </div>
+      </div>
+    );
+
+    return this.props.homePage ? (
       <section>
         <SrOnlyHeading
           headerLevel={this.props.srOnlyHeaderLevel}
@@ -20,11 +57,6 @@ class Menu extends Component {
         >
           test
         </SrOnlyHeading>
-        {this.props.backButton ? (
-          <div className="fe">go back</div>
-        ) : (
-          <div className="dew">test</div>
-        )}
 
         <ul className="row px-lg-4 justify-content-center mb-3">
           {this.props.menuData.map((item, i) => {
@@ -49,13 +81,12 @@ class Menu extends Component {
           test
         </SrOnlyHeading>
 
-        <div class="d-none d-lg-block menu-item-bg menu-wrapper-lg pb-5">
-          {/* <!-- Start Menu Item Row it's a double--> */}
-          {/* {this.props.menuData.map((row, index) => {
-            return (
+        <div class="menu-item-bg menu-wrapper-lg pb-5">
+          {/* {
+           
               <div
                 className="d-none d-lg-block row px-lg-4 pt-lg-5 justify-content-center product-list-wrapper-lg"
-                key={index}
+                
               >
                 <ul className="row px-lg-4 justify-content-center mb-3">
                   {this.props.menuData.map((item, i) => {
@@ -74,17 +105,15 @@ class Menu extends Component {
                   })}
                 </ul>
               </div>
-            );
-          })} */}
+            
+          } */}
 
-          {this.props.backButton ? (
-            <div className="fe">go back</div>
-          ) : (
-            <div className="dew">test</div>
-          )}
+          {this.props.backButton ? backButton : ""}
 
-          <div className="d-none d-lg-block row px-lg-4 pt-lg-5 justify-content-center product-list-wrapper-lg">
-            <ul className="row px-lg-4 justify-content-center mb-3">
+          {this.props.backButton ? menuCategory : ""}
+
+          <div className="row px-lg-4 pt-lg-5 justify-content-center product-list-wrapper-lg">
+            <ul className="row px-lg-4 justify-content-center mb-3 mobile-menu-item menu-item-bg">
               {this.props.menuData.map((item, i) => {
                 return (
                   // add item

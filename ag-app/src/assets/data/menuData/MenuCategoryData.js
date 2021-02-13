@@ -34,5 +34,5 @@ export const MenuCategoryData = [
     img: "oreoAndToastedPecanSundae",
     src: "/pages/mainMenu/menuCategories/dessertsAndBeverages.html",
     imgFilePath: "foodImages/categoryImages",
-  },
+  }
 ];

@@ -2,6 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import { MenuCategoryData } from "./assets/data/menuData/MenuCategoryData";
 import { FranchiseNavItems } from "./FranchiseNavItems";
 import { NotAMenuData } from "./assets/data/menuData/NotAMenuData";
+import { HandheldData } from "./assets/data/menuData/HandheldData";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -26,6 +27,19 @@ function App() {
           path="/pages/otherPages/pickup.html"
           render={() => <NavBar pickup={true} />}
         />
+        <Route
+          exact
+          path="/pages/mainMenu/menuCategories/handhelds.html"
+          render={() => (
+            <div>
+              <main>
+                <HeroImg img={"freestanding"} />
+                <Menu menuData={HandheldData} backButton={true} menuTitle={'Handhelds'} menuSubtitle={'100% USDA BEEF'} />
+                {/* <Menu menuData={HandheldData} backButton={true} menuTitle={'Large Plates'} /> */}
+              </main>
+            </div>
+          )}
+        />
         <Route path="/" render={() => <NavBar />} />
       </Switch>
 
@@ -36,7 +50,7 @@ function App() {
           <div>
             <main>
               <HeroImg img={"freestanding"} />
-              <Menu menuPage={false} menuData={MenuCategoryData} />
+              <Menu menuData={MenuCategoryData} backButton={false} />
             </main>
           </div>
         )}
@@ -44,10 +58,11 @@ function App() {
 
       {/* <HeroImg img={"ourStory"} />
       <main>
-        <Menu menuPage={true} menuData={MenuCategoryData} backButton={true} />
-        <Menu menuPage={true} menuData={NotAMenuData} backButton={false} />
+        <Menu homePage={true} menuData={MenuCategoryData} backButton={true} />
+        <Menu homePage={true} menuData={NotAMenuData} backButton={false} />
       </main>
       <Footer /> */}
+      <Footer />
     </div>
   );
 }

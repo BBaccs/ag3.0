@@ -36,18 +36,18 @@ function App() {
           <div>
             <main>
               <HeroImg img={"freestanding"} />
-              <Menu menuPage={true} menuData={MenuCategoryData} />
+              <Menu menuPage={false} menuData={MenuCategoryData} />
             </main>
           </div>
         )}
       />
 
-      <HeroImg img={"ourStory"} />
+      {/* <HeroImg img={"ourStory"} />
       <main>
         <Menu menuPage={true} menuData={MenuCategoryData} backButton={true} />
         <Menu menuPage={true} menuData={NotAMenuData} backButton={false} />
       </main>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

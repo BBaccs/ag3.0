@@ -7,7 +7,7 @@ class Menu extends Component {
     menuPage: false,
     srOnlyMenuTitle: "test",
     srOnlyHeaderLevel: "h1",
-    backButton: true
+    backButton: true,
   };
 
   render() {
@@ -19,30 +19,28 @@ class Menu extends Component {
         >
           test
         </SrOnlyHeading>
-        {this.props.backButton ? <div className="fe">go back</div> : <div className="dew">test</div> }
-        {this.props.menuData.map((row, index) => {
-          return (
-            <ul
-              className="row px-lg-4 justify-content-center mb-3"
-              key={index}
-            >
-              {row.map((item, i) => {
-                return (
-                  // add item
-                  <MenuItem
-                    title={item.title}
-                    img={item.img}
-                    src={item.src}
-                    imgFilePath={item.imgFilePath}
-                    imgType={item.imgType}
-                    cta={item.cta}
-                    key={i}
-                  />
-                );
-              })}
-            </ul>
-          );
-        })}
+        {this.props.backButton ? (
+          <div className="fe">go back</div>
+        ) : (
+          <div className="dew">test</div>
+        )}
+
+        <ul className="row px-lg-4 justify-content-center mb-3">
+          {this.props.menuData.map((item, i) => {
+            return (
+              // add item
+              <MenuItem
+                title={item.title}
+                img={item.img}
+                src={item.src}
+                imgFilePath={item.imgFilePath}
+                imgType={item.imgType}
+                cta={item.cta}
+                key={i}
+              />
+            );
+          })}
+        </ul>
       </section>
     ) : (
       // <main id="menu-category-page" class="menu-page">
@@ -59,20 +57,22 @@ class Menu extends Component {
                 className="d-none d-lg-block row px-lg-4 pt-lg-5 justify-content-center product-list-wrapper-lg"
                 key={index}
               >
-                {row.map((item, i) => {
-                  return (
-                    // add item
-                    <MenuItem
-                      title={item.title}
-                      img={item.img}
-                      src={item.src}
-                      imgFilePath={item.imgFilePath}
-                      imgType={item.imgType}
-                      cta={item.cta}
-                      key={i}
-                    />
-                  );
-                })}
+                <ul className="row px-lg-4 justify-content-center mb-3">
+                  {this.props.menuData.map((item, i) => {
+                    return (
+                      // add item
+                      <MenuItem
+                        title={item.title}
+                        img={item.img}
+                        src={item.src}
+                        imgFilePath={item.imgFilePath}
+                        imgType={item.imgType}
+                        cta={item.cta}
+                        key={i}
+                      />
+                    );
+                  })}
+                </ul>
               </div>
             );
           })}

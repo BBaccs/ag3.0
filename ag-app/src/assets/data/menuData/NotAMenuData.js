@@ -1,5 +1,4 @@
 export const NotAMenuData = [
-  [
     {
       title: "Careers",
       img: "catering",
@@ -22,5 +21,4 @@ export const NotAMenuData = [
       imgFilePath: "other",
       cta: "Explore more here"
     }
-  ]
 ];

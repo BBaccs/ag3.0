@@ -3,6 +3,7 @@ import { MenuCategoryData } from "./assets/data/menuData/MenuCategoryData";
 import { FranchiseNavItems } from "./FranchiseNavItems";
 import { NotAMenuData } from "./assets/data/menuData/NotAMenuData";
 import { HandheldData } from "./assets/data/menuData/HandheldData";
+import { LargePlates } from "./assets/data/menuData/LargePlates";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -40,11 +41,6 @@ function App() {
                   menuTitle={"Handhelds"}
                   menuSubtitle={"100% USDA CHOICE BEEF"}
                 />
-                <Menu
-                  menuData={HandheldData}
-                  backButton={true}
-                  menuTitle={"Large Plates"}
-                />
               </main>
             </div>
           )}
@@ -57,7 +53,7 @@ function App() {
               <main>
                 <HeroImg img={"freestanding"} />
                 <Menu
-                  menuData={HandheldData}
+                  menuData={LargePlates}
                   backButton={true}
                   menuTitle={"Large Plates"}
                 />

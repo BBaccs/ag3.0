@@ -8,7 +8,7 @@ export const MenuCategoryData = [
   {
     title: "Large Plates",
     img: "slicedSteakPlatter",
-    src: "/pages/mainMenu/menuCategories/slicedSteakPlatter.html",
+    src: "/pages/mainMenu/menuCategories/largeplates.html",
     imgFilePath: "foodImages/categoryImages",
   },
   {

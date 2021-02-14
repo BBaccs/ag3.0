@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 
 class PDP extends Component {
   static propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.array.isRequired,
   };
   render() {
+    console.log(this.props.data)
     let name = this.props.match.params.name;
     return this.props.data.map((item) => {
       if (name === item.img) {

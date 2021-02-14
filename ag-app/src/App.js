@@ -81,18 +81,14 @@ function App() {
             </div>
           )}
         /> */}
+
+        {/* Start PDP Pages */}
+
         <Route
           exact
-          path="/pages/mainMenu/menuCategories//pages/mainMenu/menuCategories/baconBombBurger.html"
-          render={() => (
-            <div>
-              <main>
-                <HeroImg img={"freestanding"} />
-              </main>
-            </div>
-          )}
+          path="/pages/menu/handhelds/:name.html"
+          render={(routeProps) => <PDP {...routeProps} />}
         />
-        {/* Start PDP Pages */}
 
         {/* End PDP Pages */}
         <Route path="/" render={() => <NavBar />} />
@@ -116,11 +112,11 @@ function App() {
         <Menu homePage={true} menuData={MenuCategoryData} backButton={true} />
         <Menu homePage={true} menuData={NotAMenuData} backButton={false} />
       </main> */}
-      <PDP />
-
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+

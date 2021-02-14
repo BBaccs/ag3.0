@@ -87,9 +87,13 @@ function App() {
         <Route
           exact
           path="/pages/menu/handhelds/:name.html"
-          render={(routeProps) => <PDP {...routeProps} />}
+          render={(routeProps) => <PDP data={HandheldData} {...routeProps} />}
         />
-
+        <Route
+          exact
+          path="/pages/menu/largeplates/:name.html"
+          render={(routeProps) => <PDP data={LargePlates} {...routeProps} />}
+        />
         {/* End PDP Pages */}
         <Route path="/" render={() => <NavBar />} />
       </Switch>
@@ -118,5 +122,3 @@ function App() {
 }
 
 export default App;
-
-

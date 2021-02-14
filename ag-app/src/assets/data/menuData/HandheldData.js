@@ -1,56 +1,65 @@
 export const HandheldData = [
   {
     title: "BACON BOMB BURGER",
-    img: "baconBombPork",
+    img: "baconBombBurger",
     src: "/pages/menu/handhelds/baconBombBurger.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "BBQ baby back ribs, spicy BBQ sauce & choice of side."
   },
   {
     title: "BRISKET STACK BURGER",
     img: "brisketStackBurger",
-    src: "/pages/mainMenu/menuCategories/slicedSteakPlatter.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/brisketStackBurger.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "fwefewfew",
   },
   {
     title: "CLASSIC CHEESEBURGER",
     img: "classicBurgerWithFries",
-    src: "/pages/mainMenu/menuCategories/salads.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/classicBurgerWithFries.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "aaaaaaa"
   },
   {
     title: "AUSSIE BURGER",
     img: "aussieBurger",
-    src: "/pages/mainMenu/menuCategories/augVolcanoShrimp.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/aussieBurger.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "aaaaaaa"
   },
   {
     title: "JAMMIN' CHICKEN SANDWICH",
     img: "jamminChickenSandwich",
-    src: "/pages/mainMenu/menuCategories/crispyChickenTenders.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/jamminChickenSandwich.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "aaaaaaa"
   },
   {
     title: "BRAISED BRISKET SANDWICH",
     img: "brisketStackBurger",
-    src: "/pages/mainMenu/menuCategories/dessertsAndBeverages.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/brisketStackBurger.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "eeeeeee"
   },
   {
     title: "IMPOSSIBLE BURGER™",
     img: "impossibleBurgerWithKettleChips",
-    src: "/pages/mainMenu/menuCategories/dessertsAndBeverages.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/impossibleBurgerWithKettleChips.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "eeeeeee"
   },
   {
     title: "CRISPY SHRIMP PO'BOY",
     img: "crispyshrimpPoBoy",
-    src: "/pages/mainMenu/menuCategories/dessertsAndBeverages.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/crispyshrimpPoBoy.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "eeeeeee"
   },
   {
     title: "CRISPY SRIRACHA CHICKEN SANDWICH",
     img: "crispyChickenSrirachaSandwich",
-    src: "/pages/mainMenu/menuCategories/dessertsAndBeverages.html",
-    imgFilePath: "foodImages/productImages/handhelds"
+    src: "/pages/menu/handhelds/crispyChickenSrirachaSandwich.html",
+    imgFilePath: "foodImages/productImages/handhelds",
+    pdpDescription: "eeeeeee"
   }
 ];

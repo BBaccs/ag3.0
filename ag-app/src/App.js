@@ -9,6 +9,7 @@ import HeroImg from "./HeroImg";
 import Menu from "./Menu";
 import "./css/custom.css";
 import Footer from "./Footer";
+import PDP from "./PDP";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           path="/pages/otherPages/pickup.html"
           render={() => <NavBar pickup={true} />}
         />
+
+        {/* Start Menu Categories */}
         <Route
           exact
           path="/pages/mainMenu/menuCategories/handhelds.html"
@@ -61,6 +64,37 @@ function App() {
             </div>
           )}
         />
+        {/* End Menu Categories */}
+        {/* <Route
+          exact
+          path={`/pages/mainMenu/menuCategories/${pdpMenuItem}.html`}
+          render={() => (
+            <div>
+              <main>
+                <HeroImg img={"freestanding"} />
+                <Menu
+                  menuData={LargePlates}
+                  backButton={true}
+                  menuTitle={"Large Plates"}
+                />
+              </main>
+            </div>
+          )}
+        /> */}
+        <Route
+          exact
+          path="/pages/mainMenu/menuCategories//pages/mainMenu/menuCategories/baconBombBurger.html"
+          render={() => (
+            <div>
+              <main>
+                <HeroImg img={"freestanding"} />
+              </main>
+            </div>
+          )}
+        />
+        {/* Start PDP Pages */}
+
+        {/* End PDP Pages */}
         <Route path="/" render={() => <NavBar />} />
       </Switch>
 
@@ -82,6 +116,7 @@ function App() {
         <Menu homePage={true} menuData={MenuCategoryData} backButton={true} />
         <Menu homePage={true} menuData={NotAMenuData} backButton={false} />
       </main> */}
+      <PDP />
 
       <Footer />
     </div>

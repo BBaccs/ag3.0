@@ -2,7 +2,7 @@ export const HandheldData = [
   {
     title: "BACON BOMB BURGER",
     img: "baconBombPork",
-    src: "/pages/mainMenu/menuCategories/baconBombBurger.html",
+    src: "/pages/menu/handhelds/baconBombBurger.html",
     imgFilePath: "foodImages/productImages/handhelds"
   },
   {

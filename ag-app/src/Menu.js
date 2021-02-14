@@ -24,7 +24,7 @@ class Menu extends Component {
       </div>
     );
 
-    const menuCategory = (
+    let menuCategory = (
       <div className="menu-category menu-category-selected">
         <div className="d-flex justify-content-center">
           <div className="d-flex align-items-center w-100 flex-column pb-1">
@@ -84,31 +84,6 @@ class Menu extends Component {
         </SrOnlyHeading>
 
         <div class="menu-item-bg menu-wrapper-lg pb-5">
-          {/* {
-           
-              <div
-                className="d-none d-lg-block row px-lg-4 pt-lg-5 justify-content-center product-list-wrapper-lg"
-                
-              >
-                <ul className="row px-lg-4 justify-content-center mb-3">
-                  {this.props.menuData.map((item, i) => {
-                    return (
-                      // add item
-                      <MenuItem
-                        title={item.title}
-                        img={item.img}
-                        src={item.src}
-                        imgFilePath={item.imgFilePath}
-                        imgType={item.imgType}
-                        cta={item.cta}
-                        key={i}
-                      />
-                    );
-                  })}
-                </ul>
-              </div>
-            
-          } */}
 
           {this.props.backButton ? backButton : ""}
 

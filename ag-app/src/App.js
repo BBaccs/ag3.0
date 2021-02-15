@@ -4,6 +4,8 @@ import { FranchiseNavItems } from "./FranchiseNavItems";
 import { NotAMenuData } from "./assets/data/menuData/NotAMenuData";
 import { HandheldData } from "./assets/data/menuData/HandheldData";
 import { LargePlates } from "./assets/data/menuData/LargePlates";
+import { CateringCategoryData } from "./assets/data/menuData/cateringMenuData/CateringCategoryData";
+import { CateringPlattersData } from "./assets/data/menuData/cateringMenuData/CateringPlattersData";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -22,7 +24,20 @@ function App() {
         />
         <Route
           path="/pages/catering"
-          render={() => <NavBar catering={true} />}
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringCategoryData} />
+            </div>
+          )}
+        />
+        <Route
+          path="/pages/catering"
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+            </div>
+          )}
         />
         <Route
           exact
@@ -65,23 +80,6 @@ function App() {
           )}
         />
         {/* End Menu Categories */}
-        {/* <Route
-          exact
-          path={`/pages/mainMenu/menuCategories/${pdpMenuItem}.html`}
-          render={() => (
-            <div>
-              <main>
-                <HeroImg img={"freestanding"} />
-                <Menu
-                  menuData={LargePlates}
-                  backButton={true}
-                  menuTitle={"Large Plates"}
-                />
-              </main>
-            </div>
-          )}
-        /> */}
-
         {/* Start PDP Pages */}
 
         <Route
@@ -93,6 +91,15 @@ function App() {
           exact
           path="/pages/menu/largeplates/:name.html"
           render={(routeProps) => <PDP data={LargePlates} {...routeProps} />}
+        />
+        <Route
+          exact path="/pages/catering/:name.html"
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringPlattersData} />
+            </div>
+          )}
         />
         {/* End PDP Pages */}
         <Route path="/" render={() => <NavBar />} />

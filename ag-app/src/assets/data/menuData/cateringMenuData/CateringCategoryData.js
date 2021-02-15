@@ -1,22 +1,22 @@
 export const CateringCategoryData = [
   {
-    title: "JAMMIN’ CHICKEN SANDWICH",
-    img: "baconBombBurger",
-    src: "/pages/catering/cateringMenu/platters",
+    title: "Platter",
+    img: "",
+    src: "/pages/catering/cateringMenu/platters.html",
     imgFilePath: "foodImages/productImages/catering",
     pdpDescription: "1a"
   },
   {
-    title: "BRAISED BRISKET SANDWICH",
+    title: "Side Platter",
     img: "baconBombBurger",
-    src: "/pages/catering/cateringMenu/sidePlatters",
+    src: "/pages/catering/cateringMenu/sidePlatters.html",
     imgFilePath: "foodImages/productImages/catering",
     pdpDescription: "2c",
   },
   {
-    title: "CRISPY SRIRACHA CHICKEN SANDWICH",
+    title: "Salad Platter",
     img: "baconBombBurger",
-    src: "/pages/catering/cateringMenu/desserts&sides",
+    src: "/pages/catering/cateringMenu/saladPlatters.html",
     imgFilePath: "foodImages/productImages/catering",
     pdpDescription: "3e"
   }

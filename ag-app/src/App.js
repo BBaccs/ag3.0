@@ -6,6 +6,7 @@ import { HandheldData } from "./assets/data/menuData/HandheldData";
 import { LargePlates } from "./assets/data/menuData/LargePlates";
 import { CateringCategoryData } from "./assets/data/menuData/cateringMenuData/CateringCategoryData";
 import { CateringPlattersData } from "./assets/data/menuData/cateringMenuData/CateringPlattersData";
+import { CateringSaladPlattersData } from "./assets/data/menuData/cateringMenuData/CateringSaladPlattersData";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -65,6 +66,26 @@ function App() {
         />
         <Route
           exact
+          path="/pages/catering/cateringMenu/:name.html"
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringPlattersData} />
+            </div>
+          )}
+        />
+        <Route
+          exact
+          path="/pages/catering/cateringMenu/:name.html"
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringSaladPlattersData} />
+            </div>
+          )}
+        />
+        <Route
+          exact
           path="/pages/mainMenu/menuCategories/largeplates.html"
           render={() => (
             <div>
@@ -91,15 +112,6 @@ function App() {
           exact
           path="/pages/menu/largeplates/:name.html"
           render={(routeProps) => <PDP data={LargePlates} {...routeProps} />}
-        />
-        <Route
-          exact path="/pages/catering/:name.html"
-          render={() => (
-            <div>
-              <NavBar catering={true} />
-              <Menu menuData={CateringPlattersData} />
-            </div>
-          )}
         />
         {/* End PDP Pages */}
         <Route path="/" render={() => <NavBar />} />

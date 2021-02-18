@@ -1,7 +1,7 @@
 export const NavItems = [
   {
     title: 'Menu',
-    url: '/pages/menu/index.html',
+    url: '/pages/mainMenu/index.html',
     cName: "nav-link",
     mobileLiCName:"nav-item",
     liCName: "nav-item"

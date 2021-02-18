@@ -16,7 +16,7 @@ class Menu extends Component {
   render() {
     const backButton = (
       <div className="select-category-bg">
-        <a href="/pages/menu/index.html">
+        <a href="/pages/mainMenu/index.html">
           <div className="d-flex">
             <div className="h1 w-100 py-4 my-1">Select New Category ^</div>
           </div>

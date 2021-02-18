@@ -17,29 +17,22 @@ import PDP from "./PDP";
 function App() {
   return (
     <div className="App">
+      <Route path="/pages/mainMenu/" render={() => <NavBar />} />
+
       <Switch>
         <Route
           exact
           path="/pages/otherPages/franchise.html"
           render={() => <NavBar navData={FranchiseNavItems} />}
         />
-        <Route
-          path="/pages/catering"
-          render={() => (
-            <div>
-              <NavBar catering={true} />
-              <Menu menuData={CateringCategoryData} />
-            </div>
-          )}
-        />
-        <Route
+        {/* <Route
           path="/pages/catering"
           render={() => (
             <div>
               <NavBar catering={true} />
             </div>
           )}
-        />
+        /> */}
         <Route
           exact
           path="/pages/otherPages/pickup.html"
@@ -47,6 +40,7 @@ function App() {
         />
 
         {/* Start Menu Categories */}
+
         <Route
           exact
           path="/pages/mainMenu/menuCategories/handhelds.html"
@@ -66,7 +60,7 @@ function App() {
         />
         <Route
           exact
-          path="/pages/catering/cateringMenu/:name.html"
+          path="/pages/catering/cateringMenu/platters.html"
           render={() => (
             <div>
               <NavBar catering={true} />
@@ -74,9 +68,10 @@ function App() {
             </div>
           )}
         />
+
         <Route
           exact
-          path="/pages/catering/cateringMenu/:name.html"
+          path="/pages/catering/cateringMenu/saladPlatters.html"
           render={() => (
             <div>
               <NavBar catering={true} />
@@ -84,6 +79,16 @@ function App() {
             </div>
           )}
         />
+        <Route
+          path="/pages/catering"
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringCategoryData} />
+            </div>
+          )}
+        />
+
         <Route
           exact
           path="/pages/mainMenu/menuCategories/largeplates.html"
@@ -105,12 +110,12 @@ function App() {
 
         <Route
           exact
-          path="/pages/menu/handhelds/:name.html"
+          path="/pages/mainMenu/handhelds/:name.html"
           render={(routeProps) => <PDP data={HandheldData} {...routeProps} />}
         />
         <Route
           exact
-          path="/pages/menu/largeplates/:name.html"
+          path="/pages/mainMenu/largeplates/:name.html"
           render={(routeProps) => <PDP data={LargePlates} {...routeProps} />}
         />
         {/* End PDP Pages */}
@@ -119,7 +124,7 @@ function App() {
 
       <Route
         exact
-        path="/pages/menu/index.html"
+        path="/pages/mainMenu/index.html"
         render={() => (
           <div>
             <main>

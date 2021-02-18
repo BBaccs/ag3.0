@@ -2,19 +2,19 @@ export const CateringPlattersData = [
   {
     title: "Platter1",
     img: "baconBombBurger",
-    src: "/pages/menu/handhelds/baconBombBurger.html",
+    src: "",
     pdpDescription: "1"
   },
   {
     title: "Platter2",
     img: "baconBombBurger",
-    src: "/pages/menu/handhelds/brisketStackBurger.html",
+    src: "",
     pdpDescription: "2",
   },
   {
     title: "Platter3",
     img: "baconBombBurger",
-    src: "/pages/menu/handhelds/classicBurgerWithFries.html",
+    src: "",
     pdpDescription: "3"
   }
 ];

@@ -9,7 +9,7 @@ export const CateringCategoryData = [
   {
     title: "Side Platter",
     img: "baconBombBurger",
-    src: "/pages/catering/cateringMenu/sidePlatters.html",
+    src: "",
     imgFilePath: "foodImages/productImages/catering",
     pdpDescription: "2c",
   },

@@ -20,7 +20,7 @@ class NavBar extends Component {
 
   handleClick = () => {
     this.setState((st) => ({
-      hamburgerOpen: !st.hamburgerOpen,
+      hamburgerOpen: !st.hamburgerOpen
     }));
   };
 

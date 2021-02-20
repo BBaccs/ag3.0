@@ -5,8 +5,10 @@ import PropTypes from "prop-types";
 class PDP extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
-    catering: false,
   };
+  static defaultProps = {
+    catering: false
+  }
   render() {
     let name = this.props.match.params.name;
     return this.props.data.map((item) => {

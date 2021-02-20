@@ -100,11 +100,6 @@ function App() {
         />
         {/* End Menu Categories */}
         {/* Start PDP Pages */}
-        {/* <Route
-          
-          path="/pages/mainMenu/:type/:name.html"
-          render={(routeProps) => <PDP data={HandheldData} {...routeProps} />}
-        /> */}
         <Route
           exact
           path="/pages/mainMenu/:type/:name.html"
@@ -112,7 +107,7 @@ function App() {
         />
         <Route
           exact
-          path="/pages/catering/cateringMenu/:name.html"
+          path="/pages/catering/:type/:name.html"
           render={(routeProps) => (
             <PDP data={CateringPlattersData} {...routeProps} catering={true} />
           )}

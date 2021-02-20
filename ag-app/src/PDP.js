@@ -13,6 +13,7 @@ class PDP extends Component {
     let name = this.props.match.params.name;
     let type = this.props.match.params.type;
     return this.props.data.map((item) => {
+      // Type is uncessarry but should remain incase we ever get an item w/ the same name on sides/snacks or kids menu that also exists somewhere else on the menu.
       if (name === item.img && item.src.includes(type)) {
         return (
           <main

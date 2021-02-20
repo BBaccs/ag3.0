@@ -42,6 +42,7 @@ class PDP extends Component {
                   {item.pdpDescription}
                 </p>
               </div>
+              {/* Catering pages link to a different (external) order page */}
               {!this.props.catering ? (
                 <div className="row py-5 d-none d-lg-block">
                   <div className="m-auto">

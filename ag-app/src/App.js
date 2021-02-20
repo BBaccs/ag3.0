@@ -88,14 +88,12 @@ function App() {
           path="/pages/mainMenu/menuCategories/largeplates.html"
           render={() => (
             <div>
-              <main>
-                <HeroImg img={"freestanding"} />
+              <HeroImg img={"freestanding"} />
                 <Menu
                   menuData={LargePlates}
                   backButton={true}
                   menuTitle={"Large Plates"}
                 />
-              </main>
             </div>
           )}
         />
@@ -155,7 +153,8 @@ function App() {
           </div>
         )}
       />
-
+      
+{/* OTHER PAGES */}
       <Route
         exact
         path="/pages/otherPages/ourStory.html"
@@ -186,10 +185,19 @@ function App() {
       />
       <Route
         exact
-        path="/pages/otherPages/locations.html"
+        path="/pages/otherPages/pickup.html"
         render={() => (
           <div>
             <h2>LOACTIONS</h2>
+          </div>
+        )}
+      />
+      <Route
+        exact
+        path="/pages/otherPages/contact.html"
+        render={() => (
+          <div>
+            <h2>CONTACT</h2>
           </div>
         )}
       />

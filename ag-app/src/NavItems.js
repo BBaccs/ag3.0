@@ -17,7 +17,7 @@ export const NavItems = [
   },
   {
     title: 'Catering',
-    url: '/pages/catering/cateringMenu/menuCategory.html',
+    url: '/pages/catering/cateringMenu/index.html',
     cName: "nav-link",
     mobileLiCName:"nav-item",
     liCName: "nav-item d-none d-sm-none d-md-block"

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 class PDP extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
+    catering: false,
   };
   render() {
-    console.log(this.props.data)
     let name = this.props.match.params.name;
     return this.props.data.map((item) => {
       if (name === item.img) {
@@ -42,16 +42,29 @@ class PDP extends Component {
                   {item.pdpDescription}
                 </p>
               </div>
-              <div className="row py-5 d-none d-lg-block">
-                <div className="m-auto">
-                  <NavLink
-                    to="/pages/otherPages/pickup.html"
-                    className="btn btn-primary btn-lg mr-5 pdp-lg-button"
-                  >
-                    Order
-                  </NavLink>
+              {!this.props.catering ? (
+                <div className="row py-5 d-none d-lg-block">
+                  <div className="m-auto">
+                    <NavLink
+                      to="/pages/otherPages/pickup.html"
+                      className="btn btn-primary btn-lg mr-5 pdp-lg-button"
+                    >
+                      Order
+                    </NavLink>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="row py-5 d-none d-lg-block">
+                  <div className="m-auto">
+                    <a
+                      href="https://www.ezcater.com/brand/pvt/aussie-grill"
+                      className="btn btn-primary btn-lg mr-5 pdp-lg-button"
+                    >
+                      Order
+                    </a>
+                  </div>
+                </div>
+              )}
             </div>
           </main>
         );

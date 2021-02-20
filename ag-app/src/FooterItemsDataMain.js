@@ -7,7 +7,7 @@ export const FooterItemsDataMain = [
   },
   {
     title: 'Catering',
-    url: '/pages/catering/cateringMenu/menuCategory.html',
+    url: '/pages/catering/cateringMenu/index.html',
     cName: "nav-link",
     liCName: "nav-item"
   },

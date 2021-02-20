@@ -7,6 +7,7 @@ import { LargePlates } from "./assets/data/menuData/LargePlates";
 import { CateringCategoryData } from "./assets/data/menuData/cateringMenuData/CateringCategoryData";
 import { CateringPlattersData } from "./assets/data/menuData/cateringMenuData/CateringPlattersData";
 import { CateringSaladPlattersData } from "./assets/data/menuData/cateringMenuData/CateringSaladPlattersData";
+import { CateringSidePlattersData } from "./assets/data/menuData/cateringMenuData/CateringSidePlattersData";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -80,7 +81,18 @@ function App() {
           )}
         />
         <Route
-          path="/pages/catering"
+          exact
+          path="/pages/catering/cateringMenu/sidePlatters.html"
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringSidePlattersData} />
+            </div>
+          )}
+        />
+        <Route
+          exact
+          path="/pages/catering/cateringMenu/index.html"
           render={() => (
             <div>
               <NavBar catering={true} />
@@ -117,6 +129,13 @@ function App() {
           exact
           path="/pages/mainMenu/largeplates/:name.html"
           render={(routeProps) => <PDP data={LargePlates} {...routeProps} />}
+        />
+        <Route
+          exact
+          path="/pages/catering/cateringMenu/:name.html"
+          render={(routeProps) => (
+            <PDP data={CateringPlattersData} {...routeProps} catering={true}/>
+          )}
         />
         {/* End PDP Pages */}
         <Route path="/" render={() => <NavBar />} />

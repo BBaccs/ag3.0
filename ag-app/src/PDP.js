@@ -17,6 +17,7 @@ class PDP extends Component {
           <main
             id={`${name}`}
             className="menu-page menu-page-bg product-description-page"
+            key={`${name}`}
           >
             <div id="skip-link" className="container-fluid mt-0 p-3 pt-4">
               {/* <!-- Responsive pictures --> */}

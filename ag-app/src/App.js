@@ -18,28 +18,26 @@ import PDP from "./PDP";
 function App() {
   return (
     <div className="App">
-      <Route path="/pages/mainMenu/" render={() => <NavBar />} />
-
       <Switch>
+        <Route path="/pages/mainMenu/" render={() => <NavBar />} />
+        <Route
+          path="/pages/catering/"
+          render={() => <NavBar catering={true} />}
+        />
         <Route
           exact
           path="/pages/otherPages/franchise.html"
           render={() => <NavBar navData={FranchiseNavItems} />}
         />
-        {/* <Route
-          path="/pages/catering"
-          render={() => (
-            <div>
-              <NavBar catering={true} />
-            </div>
-          )}
-        /> */}
         <Route
           exact
           path="/pages/otherPages/pickup.html"
           render={() => <NavBar pickup={true} />}
         />
+        <Route path="/" render={() => <NavBar />} />
+      </Switch>
 
+      <Switch>
         {/* Start Menu Categories */}
 
         <Route
@@ -64,7 +62,6 @@ function App() {
           path="/pages/catering/cateringMenu/platters.html"
           render={() => (
             <div>
-              <NavBar catering={true} />
               <Menu menuData={CateringPlattersData} />
             </div>
           )}
@@ -73,32 +70,17 @@ function App() {
         <Route
           exact
           path="/pages/catering/cateringMenu/saladPlatters.html"
-          render={() => (
-            <div>
-              <NavBar catering={true} />
-              <Menu menuData={CateringSaladPlattersData} />
-            </div>
-          )}
+          render={() => <Menu menuData={CateringSaladPlattersData} />}
         />
         <Route
           exact
           path="/pages/catering/cateringMenu/sidePlatters.html"
-          render={() => (
-            <div>
-              <NavBar catering={true} />
-              <Menu menuData={CateringSidePlattersData} />
-            </div>
-          )}
+          render={() => <Menu menuData={CateringSidePlattersData} />}
         />
         <Route
           exact
           path="/pages/catering/cateringMenu/index.html"
-          render={() => (
-            <div>
-              <NavBar catering={true} />
-              <Menu menuData={CateringCategoryData} />
-            </div>
-          )}
+          render={() => <Menu menuData={CateringCategoryData} />}
         />
 
         <Route
@@ -119,7 +101,6 @@ function App() {
         />
         {/* End Menu Categories */}
         {/* Start PDP Pages */}
-
         <Route
           exact
           path="/pages/mainMenu/handhelds/:name.html"
@@ -134,11 +115,10 @@ function App() {
           exact
           path="/pages/catering/cateringMenu/:name.html"
           render={(routeProps) => (
-            <PDP data={CateringPlattersData} {...routeProps} catering={true}/>
+            <PDP data={CateringPlattersData} {...routeProps} catering={true} />
           )}
         />
         {/* End PDP Pages */}
-        <Route path="/" render={() => <NavBar />} />
       </Switch>
 
       <Route
@@ -154,11 +134,66 @@ function App() {
         )}
       />
 
-      {/* <HeroImg img={"ourStory"} />
-      <main>
-        <Menu homePage={true} menuData={MenuCategoryData} backButton={true} />
-        <Menu homePage={true} menuData={NotAMenuData} backButton={false} />
-      </main> */}
+      <Route
+        exact
+        path="/"
+        render={() => (
+          <div>
+            <HeroImg img={"ourStory"} />
+            <main>
+              <Menu
+                homePage={true}
+                menuData={MenuCategoryData}
+                backButton={true}
+              />
+              <Menu
+                homePage={true}
+                menuData={NotAMenuData}
+                backButton={false}
+              />
+            </main>
+          </div>
+        )}
+      />
+
+      <Route
+        exact
+        path="/pages/otherPages/ourStory.html"
+        render={() => (
+          <div>
+            <HeroImg img={"ourStory"} />
+            <h2>ourStory</h2>
+          </div>
+        )}
+      />
+      <Route
+        exact
+        path="/pages/otherPages/careers.html"
+        render={() => (
+          <div>
+            <h2>CAREERS</h2>
+          </div>
+        )}
+      />
+      <Route
+        exact
+        path="/pages/otherPages/franchise.html"
+        render={() => (
+          <div>
+            <h2>FRANCHISE</h2>
+          </div>
+        )}
+      />
+      <Route
+        exact
+        path="/pages/otherPages/locations.html"
+        render={() => (
+          <div>
+            <h2>LOACTIONS</h2>
+          </div>
+        )}
+      />
+
       <Footer />
     </div>
   );

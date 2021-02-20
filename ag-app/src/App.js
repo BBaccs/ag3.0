@@ -8,7 +8,7 @@ import { CateringCategoryData } from "./assets/data/menuData/cateringMenuData/Ca
 import { CateringPlattersData } from "./assets/data/menuData/cateringMenuData/CateringPlattersData";
 import { CateringSaladPlattersData } from "./assets/data/menuData/cateringMenuData/CateringSaladPlattersData";
 import { CateringSidePlattersData } from "./assets/data/menuData/cateringMenuData/CateringSidePlattersData";
-import { mainMenuData } from "./assets/data/menuData/mainMenuData";
+import { mainMenuData } from "./assets/data/menuData/MainMenuData";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";

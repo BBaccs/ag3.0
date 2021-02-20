@@ -52,7 +52,7 @@ class NavBar extends Component {
       <div>
         <a
           className="sr-only sr-only-focusable"
-          href="#homepage-container-fluid"
+          href="#skip-link"
         >
           Skip to main content
         </a>

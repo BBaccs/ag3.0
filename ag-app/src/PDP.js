@@ -13,10 +13,10 @@ class PDP extends Component {
       if (name === item.img) {
         return (
           <main
-            id={`${name}-skip-link`}
+            id={`${name}`}
             className="menu-page menu-page-bg product-description-page"
           >
-            <div className="container-fluid mt-0 p-3 pt-4">
+            <div id="skip-link" className="container-fluid mt-0 p-3 pt-4">
               {/* <!-- Responsive pictures --> */}
               <picture>
                 <source

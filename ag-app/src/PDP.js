@@ -11,8 +11,9 @@ class PDP extends Component {
   }
   render() {
     let name = this.props.match.params.name;
+    let type = this.props.match.params.type;
     return this.props.data.map((item) => {
-      if (name === item.img) {
+      if (name === item.img && item.src.includes(type)) {
         return (
           <main
             id={`${name}`}

@@ -99,14 +99,14 @@ function App() {
         />
         {/* End Menu Categories */}
         {/* Start PDP Pages */}
-        <Route
-          exact
-          path="/pages/mainMenu/handhelds/:name.html"
+        {/* <Route
+          
+          path="/pages/mainMenu/:type/:name.html"
           render={(routeProps) => <PDP data={HandheldData} {...routeProps} />}
-        />
+        /> */}
         <Route
-          exact
-          path="/pages/mainMenu/largeplates/:name.html"
+          
+          path="/pages/mainMenu/:type/:name.html"
           render={(routeProps) => <PDP data={LargePlates} {...routeProps} />}
         />
         <Route

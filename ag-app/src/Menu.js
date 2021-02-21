@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 import { NavLink } from "react-router-dom";
 
 class Menu extends Component {
-  defaultProps = {
+  static defaultProps = {
     homePage: false,
     srOnlyMenuTitle: "test",
     srOnlyHeaderLevel: "h1",
@@ -14,6 +14,7 @@ class Menu extends Component {
   };
 
   render() {
+    let category = this.props.match.params.category;
     const backButton = (
       <div className="select-category-bg">
         <a href="/pages/mainMenu/index.html">
@@ -51,6 +52,15 @@ class Menu extends Component {
       </div>
     );
 
+    // this.props.menuData.map((menuItem, index) => {
+    //   if (menuItem.imgFilePath.toLowerCase().includes(category)) {
+    //     return console.log(menuItem)
+    //   } else {
+    //     return console.log(false)
+    //   }
+      
+    // });
+
     return this.props.homePage ? (
       <section>
         <SrOnlyHeading
@@ -62,18 +72,23 @@ class Menu extends Component {
 
         <ul className="row px-lg-4 justify-content-center mb-3">
           {this.props.menuData.map((item, i) => {
-            return (
-              // add item
-              <MenuItem
-                title={item.title}
-                img={item.img}
-                src={item.src}
-                imgFilePath={item.imgFilePath}
-                imgType={item.imgType}
-                cta={item.cta}
-                key={i}
-              />
-            );
+            console.log(item.imgFilePath.toLowerCase().includes(category))
+            if (item.imgFilePath.toLowerCase().includes(category)) {
+              return (
+                // add item
+                <MenuItem
+                  title={item.title}
+                  img={item.img}
+                  src={item.src}
+                  imgFilePath={item.imgFilePath}
+                  imgType={item.imgType}
+                  cta={item.cta}
+                  key={i}
+                />
+              ); 
+            }else {
+              return ''
+            }
           })}
         </ul>
       </section>
@@ -92,18 +107,21 @@ class Menu extends Component {
           <div className="row px-lg-4 pt-lg-5 justify-content-center product-list-wrapper-lg">
             <ul className="row px-lg-4 justify-content-center mb-3 mobile-menu-item menu-item-bg">
               {this.props.menuData.map((item, i) => {
-                return (
-                  // add item
-                  <MenuItem
-                    title={item.title}
-                    img={item.img}
-                    src={item.src}
-                    imgFilePath={item.imgFilePath}
-                    imgType={item.imgType}
-                    cta={item.cta}
-                    key={i}
-                  />
-                );
+                // Only show items of the category
+                if (item.imgFilePath.toLowerCase().includes(category)) {
+                  return (
+                    // add item
+                    <MenuItem
+                      title={item.title}
+                      img={item.img}
+                      src={item.src}
+                      imgFilePath={item.imgFilePath}
+                      imgType={item.imgType}
+                      cta={item.cta}
+                      key={i}
+                    />
+                  ); 
+                }
               })}
             </ul>
           </div>

@@ -4,11 +4,12 @@ export const MenuCategoryData = [
     img: "crispyChickenSrirachaSandwich",
     src: "/pages/mainMenu/menuCategories/handhelds.html",
     imgFilePath: "foodImages/categoryImages",
+    menuSubtitle: "100% USDA CHOICE BEEF"
   },
   {
     title: "Large Plates",
     img: "slicedSteakPlatter",
-    src: "/pages/mainMenu/menuCategories/largeplates.html",
+    src: "/pages/mainMenu/menuCategories/largePlates.html",
     imgFilePath: "foodImages/categoryImages",
   },
   {

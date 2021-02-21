@@ -19,6 +19,8 @@ import PDP from "./PDP";
 function App() {
   return (
     <div className="App">
+
+
       <Switch>
         <Route path="/pages/mainMenu/" render={() => <NavBar />} />
         <Route
@@ -36,28 +38,87 @@ function App() {
           render={() => <NavBar pickup={true} />}
         />
         <Route path="/" render={() => <NavBar />} />
+        <Route render={() => <h1>You seem lost.</h1>} />
       </Switch>
 
       <Switch>
         {/* Start Menu Categories */}
 
         <Route
-          exact
-          path="/pages/mainMenu/menuCategories/handhelds.html"
-          render={() => (
-            <div>
-              <main>
-                <HeroImg img={"freestanding"} />
-                <Menu
-                  menuData={HandheldData}
-                  backButton={true}
-                  menuTitle={"Handhelds"}
-                  menuSubtitle={"100% USDA CHOICE BEEF"}
-                />
-              </main>
-            </div>
+          path="/pages/mainMenu/menuCategories/:category.html"
+          render={(routeProps) => (
+            <main>
+              <Menu
+                {...routeProps}
+                menuData={mainMenuData}
+                menuTitle={"Handhelds"}
+                menuSubtitle={"100% USDA CHOICE BEEF"}
+              />
+            </main>
           )}
         />
+        <Route
+          path="/pages/mainMenu/menuCategories/:category.html"
+          render={(routeProps) => (
+            <main>
+              <Menu
+                {...routeProps}
+                menuData={mainMenuData}
+                menuTitle={"Large Plates"}
+              />
+            </main>
+          )}
+        />
+{/* 
+        {MenuCategoryData.forEach((menuCategory) => {
+          console.log(menuCategory.title);
+          return (
+            <Route
+              path="/pages/mainMenu/menuCategories/:category.html"
+              render={(routeProps) => (
+                <div>
+                  {MenuCategoryData.forEach((menuCategory) => {
+                    return (
+                      <Menu
+                        {...routeProps}
+                        menuData={mainMenuData}
+                        menuTitle={menuCategory.title}
+                        menuSubtitle={menuCategory.subtitle}
+                      />
+                    );
+                  })}
+                </div>
+              )}
+            />
+          );
+        })} */}
+        {/* <Route
+        exact
+          path="/pages/mainMenu/menuCategories/:type.html"
+          render={(routeProps) => (
+            <div>
+              {mainMenuData.forEach((menuCategory, index) => {
+                console.log(menuCategory.title);
+                return (
+                  <Menu
+                    {...routeProps}
+                    menuData={mainMenuData}
+                    menuTitle={menuCategory.title}
+                    menuSubtitle={menuCategory.subtitle}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+          )}
+        /> */}
+
+        <Route
+          exact
+          path="/pages/mainMenu/:type/:name.html"
+          render={(routeProps) => <PDP data={mainMenuData} {...routeProps} />}
+        />
+
         <Route
           exact
           path="/pages/catering/cateringMenu/platters.html"
@@ -84,20 +145,6 @@ function App() {
           render={() => <Menu menuData={CateringCategoryData} />}
         />
 
-        <Route
-          exact
-          path="/pages/mainMenu/menuCategories/largeplates.html"
-          render={() => (
-            <div>
-              <HeroImg img={"freestanding"} />
-                <Menu
-                  menuData={LargePlates}
-                  backButton={true}
-                  menuTitle={"Large Plates"}
-                />
-            </div>
-          )}
-        />
         {/* End Menu Categories */}
         {/* Start PDP Pages */}
         <Route
@@ -149,8 +196,8 @@ function App() {
           </div>
         )}
       />
-      
-{/* OTHER PAGES */}
+
+      {/* OTHER PAGES */}
       <Route
         exact
         path="/pages/otherPages/ourStory.html"
@@ -197,6 +244,8 @@ function App() {
           </div>
         )}
       />
+      {/* <Route exact path="/" render={() => <h1>Homepage.</h1>} /> */}
+      
 
       <Footer />
     </div>

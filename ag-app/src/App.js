@@ -44,7 +44,8 @@ function App() {
       <Switch>
         {/* Start Menu Categories */}
 
-        <Route
+        {/* <Route
+        sensitive
           path="/pages/mainMenu/menuCategories/:category.html"
           render={(routeProps) => (
             <main>
@@ -56,9 +57,11 @@ function App() {
               />
             </main>
           )}
-        />
+        /> */}
         <Route
+        
           path="/pages/mainMenu/menuCategories/:category.html"
+          sensitive
           render={(routeProps) => (
             <main>
               <Menu

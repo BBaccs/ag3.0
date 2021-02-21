@@ -8,7 +8,7 @@ import { CateringCategoryData } from "./assets/data/menuData/cateringMenuData/Ca
 import { CateringPlattersData } from "./assets/data/menuData/cateringMenuData/CateringPlattersData";
 import { CateringSaladPlattersData } from "./assets/data/menuData/cateringMenuData/CateringSaladPlattersData";
 import { CateringSidePlattersData } from "./assets/data/menuData/cateringMenuData/CateringSidePlattersData";
-import { mainMenuData } from "./assets/data/menuData/MainMenuData";
+import { MainMenuData } from "./assets/data/menuData/MainMenuData";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -86,9 +86,9 @@ function App() {
 
         <Route
           exact
-          path="/pages/mainMenu/menuCategories/largeplates.html"
+          path="/pages/mainMenu/menuCategories/largePlates.html"
           render={() => (
-            <div>
+            <div id="skip-link">
               <HeroImg img={"freestanding"} />
                 <Menu
                   menuData={LargePlates}
@@ -103,7 +103,7 @@ function App() {
         <Route
           exact
           path="/pages/mainMenu/:type/:name.html"
-          render={(routeProps) => <PDP data={mainMenuData} {...routeProps} />}
+          render={(routeProps) => <PDP data={MainMenuData} {...routeProps} />}
         />
         <Route
           exact

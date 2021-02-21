@@ -26,7 +26,7 @@ class PDP extends Component {
               <picture>
                 <source
                   srcSet={`/assets/${item.imgFilePath}/desktop/${item.img}800x600.jpg`}
-                  media="(min-width: 1600px)"
+                  media="(min-width: 769px)"
                 />
                 <source
                   srcSet={`/assets/${item.imgFilePath}/desktop/${item.img}500x375.jpg`}

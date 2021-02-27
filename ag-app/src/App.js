@@ -9,6 +9,8 @@ import { CateringPlattersData } from "./assets/data/menuData/cateringMenuData/Ca
 import { CateringSaladPlattersData } from "./assets/data/menuData/cateringMenuData/CateringSaladPlattersData";
 import { CateringSidePlattersData } from "./assets/data/menuData/cateringMenuData/CateringSidePlattersData";
 import { MainMenuData } from "./assets/data/menuData/MainMenuData";
+import { Locations } from "./assets/data/locations/Locations";
+import LocationsCard from "./LocationsCard";
 import NavBar from "./NavBar";
 import HeroImg from "./HeroImg";
 import Menu from "./Menu";
@@ -90,11 +92,11 @@ function App() {
           render={() => (
             <div id="skip-link">
               <HeroImg img={"freestanding"} />
-                <Menu
-                  menuData={LargePlates}
-                  backButton={true}
-                  menuTitle={"Large Plates"}
-                />
+              <Menu
+                menuData={LargePlates}
+                backButton={true}
+                menuTitle={"Large Plates"}
+              />
             </div>
           )}
         />
@@ -149,8 +151,8 @@ function App() {
           </div>
         )}
       />
-      
-{/* OTHER PAGES */}
+
+      {/* OTHER PAGES */}
       <Route
         exact
         path="/pages/otherPages/ourStory.html"
@@ -183,18 +185,51 @@ function App() {
         exact
         path="/pages/otherPages/pickup.html"
         render={() => (
-          <div>
-            <h2>LOACTIONS</h2>
-          </div>
+          <main id="pickup-page" className="landing-page">
+            <div className="container-fluid text-center landing-content-wrapper">
+              <h1 className="landing-heading mb-4 mb-lg-5">
+                Choose your location to place an order!
+              </h1>
+              { Locations.map((location, index) => {
+                return (
+                  <LocationsCard 
+                    key={index}
+                    name={location.name}
+                    description={location.description}
+                    address={location.address}
+                    directionsLink={location.directionsLink}
+                    pickup={location.pickup}
+                    ddLink={location.ddLink}
+                    uberEatsLink={location.uberEatsLink}
+                    pdf={location.pdf}
+                  />
+                )
+              }) }
+              <div style={{maxWidth: '1200px'}} className="mt-md-4 mx-auto"></div>
+            </div>
+          </main>
         )}
       />
       <Route
         exact
         path="/pages/otherPages/contact.html"
         render={() => (
-          <div>
-            <h2>CONTACT</h2>
-          </div>
+          <main id="pickup-page" className="landing-page">
+            <div className="container-fluid text-center landing-content-wrapper">
+              { Locations.map((location, index) => {
+                return (
+                  <LocationsCard 
+                    key={index}
+                    name={location.name}
+                    description={location.description}
+                    address={location.address}
+                    phone={location.phone}
+                    contactPage={true}
+                  />
+                )
+              }) }
+            </div>
+          </main>
         )}
       />
 

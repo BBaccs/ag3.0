@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-class mobileFixedCTA extends Component {
+class MobileFixedCTA extends Component {
+  static defaultProps = {
+    catering: false
+  }
   render() {
     return (
       <div className="cta-wrapper">
         <div className="d-flex container-fluid justify-content-between align-items-center cta-banner">
           <img
             className="bull-cta"
-            src="/ag3.0/assets/agGraphicElements/animals/mobile/bullFullSmall.png"
+            src="/assets/agGraphicElements/animals/mobile/bullFullSmall.png"
             alt=""
           />
           {this.props.catering ? (
@@ -20,7 +23,7 @@ class mobileFixedCTA extends Component {
             </a>
           ) : (
             <NavLink
-              to="/ag3.0/pages/otherPages/pickup.html"
+              to="/pages/otherPages/pickup.html"
               className="btn btn-primary cta-primary"
             >
               Order now
@@ -32,4 +35,4 @@ class mobileFixedCTA extends Component {
   }
 }
 
-export default mobileFixedCTA;
+export default MobileFixedCTA;

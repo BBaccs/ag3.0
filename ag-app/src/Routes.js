@@ -16,6 +16,7 @@ import NavBar from "./components/NavBar";
 import HeroImg from "./components/HeroImg";
 import Menu from "./components/Menu";
 import PDP from "./components/PDP";
+import Page from "./components/Page";
 
 class Routes extends Component {
   render() {
@@ -25,11 +26,11 @@ class Routes extends Component {
           exact
           path="/pages/otherPages/ourStory.html"
           render={() => (
-            <div>
+            <Page>
               <NavBar />
               <HeroImg img={"ourStory"} />
               <h2>ourStory</h2>
-            </div>
+            </Page>
           )}
         />
         <Route

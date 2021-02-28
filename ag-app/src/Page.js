@@ -6,7 +6,7 @@ import "./styles/Page.css";
 class Page extends Component {
   render() {
     return (
-      <div className="page">{children}</div>;
+      <div className="page">{children}</div>
     )
   }
 }

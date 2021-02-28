@@ -1,7 +1,7 @@
 // Should this be solved w/ state?
 import React, { Component } from "react";
-import { NavItems } from "./assets/data/navData/NavItems";
-import { SocialNavItems } from "./SocialNavItems";
+import { NavItems } from "../assets/data/navData/NavItems";
+import { SocialNavItems } from "../assets/data/navData/SocialNavItems";
 import { NavLink } from "react-router-dom";
 
 class NavBar extends Component {

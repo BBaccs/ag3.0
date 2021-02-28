@@ -1,6 +1,9 @@
+import React, { Component } from "react";
 import "./css/custom.css";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import Routes from "./Routes";
+
+
 
 function App() {
   return (

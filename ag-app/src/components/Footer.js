@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { SocialNavItems } from "./SocialNavItems";
+import { SocialNavItems } from "../assets/data/navData/SocialNavItems";
 import { NavLink } from "react-router-dom";
-import { FooterItemsDataMain } from "./FooterItemsDataMain";
-import { FooterItemsDataSecondary } from "./FooterItemsDataSecondary";
+import { FooterItemsDataMain } from "../assets/data/footerData/FooterItemsDataMain";
+import { FooterItemsDataSecondary } from "../assets/data/footerData/FooterItemsDataSecondary";
 
 class Footer extends Component {
   render() {

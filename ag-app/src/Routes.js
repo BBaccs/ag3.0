@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import { MenuCategoryData } from "./assets/data/menuData/MenuCategoryData";
-import { FranchiseNavItems } from "./FranchiseNavItems";
+import { FranchiseNavItems } from "./assets/data/navData/FranchiseNavItems";
 import { NotAMenuData } from "./assets/data/menuData/NotAMenuData";
 import { HandheldData } from "./assets/data/menuData/HandheldData";
 import { LargePlates } from "./assets/data/menuData/LargePlates";
@@ -11,11 +11,11 @@ import { CateringSaladPlattersData } from "./assets/data/menuData/cateringMenuDa
 import { CateringSidePlattersData } from "./assets/data/menuData/cateringMenuData/CateringSidePlattersData";
 import { MainMenuData } from "./assets/data/menuData/MainMenuData";
 import { Locations } from "./assets/data/locations/Locations";
-import LocationsCard from "./LocationsCard";
-import NavBar from "./NavBar";
-import HeroImg from "./HeroImg";
-import Menu from "./Menu";
-import PDP from "./PDP";
+import LocationsCard from "./components/LocationsCard";
+import NavBar from "./components/NavBar";
+import HeroImg from "./components/HeroImg";
+import Menu from "./components/Menu";
+import PDP from "./components/PDP";
 
 class Routes extends Component {
   render() {

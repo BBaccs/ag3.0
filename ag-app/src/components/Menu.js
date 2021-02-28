@@ -6,8 +6,6 @@ import { NavLink } from "react-router-dom";
 class Menu extends Component {
   defaultProps = {
     homePage: false,
-    srOnlyMenuTitle: "test",
-    srOnlyHeaderLevel: "h1",
     backButton: true,
     menuTitle: "",
     menuSubtitle: "",
@@ -16,10 +14,8 @@ class Menu extends Component {
   render() {
     const backButton = (
       <div className="select-category-bg">
-        <NavLink to="/pages/mainMenu/index.html">
-          <div className="d-flex">
-            <div className="h1 w-100 py-4 my-1">Select New Category ^</div>
-          </div>
+        <NavLink to="/pages/mainMenu/index.html" className="d-flex">
+          <div className="h1 w-100 py-4 my-1">Select New Category ^</div>
         </NavLink>
       </div>
     );
@@ -53,13 +49,6 @@ class Menu extends Component {
 
     return this.props.homePage ? (
       <section>
-        <SrOnlyHeading
-          headerLevel={this.props.srOnlyHeaderLevel}
-          srOnlyMenuTitle={this.props.srOnlyMenuTitle}
-        >
-          test
-        </SrOnlyHeading>
-
         <ul className="row px-lg-4 justify-content-center mb-3">
           {this.props.menuData.map((item, i) => {
             return (
@@ -78,10 +67,8 @@ class Menu extends Component {
         </ul>
       </section>
     ) : (
-      <main id="menu-category-page" class="menu-page">
-        <SrOnlyHeading headerLevel={this.props.srOnlyHeaderLevel}>
-          test
-        </SrOnlyHeading>
+      <section id="menu-category-page" class="menu-page">
+        <h1 className="sr-only">{`${this.props.menuTitle} Menu`}</h1> 
 
         <div class="menu-item-bg menu-wrapper-lg pb-5">
 
@@ -120,7 +107,7 @@ class Menu extends Component {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     );
   }
 }

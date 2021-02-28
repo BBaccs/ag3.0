@@ -137,7 +137,12 @@ class Routes extends Component {
           render={() => (
             <div>
               <NavBar catering={true} />
-              <Menu menuData={CateringPlattersData} />
+              <div id="skip-link">
+                <Menu 
+                menuData={CateringPlattersData}
+                menuTitle={"Catering Platters"}
+                />
+              </div>
             </div>
           )}
         />
@@ -148,7 +153,10 @@ class Routes extends Component {
           render={() => (
             <div>
               <NavBar catering={true} />
-              <Menu menuData={CateringSaladPlattersData} />
+              <Menu 
+              menuData={CateringSaladPlattersData}
+              menuTitle={"Catering Salad Platters"}
+              />
             </div>
           )}
         />
@@ -158,7 +166,10 @@ class Routes extends Component {
           render={() => (
             <div>
               <NavBar catering={true} />
-              <Menu menuData={CateringSidePlattersData} />
+              <Menu 
+              menuData={CateringSidePlattersData}
+              menuTitle={"Catering Side Platters"}
+              />
             </div>
           )}
         />
@@ -168,7 +179,10 @@ class Routes extends Component {
           render={() => (
             <div>
               <NavBar catering={true} />
-              <Menu menuData={CateringCategoryData} />
+              <Menu 
+              menuData={CateringCategoryData}
+              menuTitle={"Catering"}
+              />
             </div>
           )}
         />
@@ -242,7 +256,8 @@ class Routes extends Component {
             <div>
               <NavBar />
               <HeroImg img={"ourStory"} />
-              <main>
+              <main id="skip-link">
+                <h1 className="sr-only">Aussie Grill</h1>
                 <Menu
                   homePage={true}
                   menuData={MenuCategoryData}

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import SrOnlyHeading from "./SrOnlyHeading";
 import MenuItem from "./MenuItem";
 import { NavLink } from "react-router-dom";
 

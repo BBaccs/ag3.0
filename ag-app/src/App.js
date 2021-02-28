@@ -22,33 +22,104 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/pages/mainMenu/" render={() => <NavBar />} />
         <Route
-          path="/pages/catering/"
-          render={() => <NavBar catering={true} />}
+          exact
+          path="/pages/otherPages/ourStory.html"
+          render={() => (
+            <div>
+              <NavBar />
+              <HeroImg img={"ourStory"} />
+              <h2>ourStory</h2>
+            </div>
+          )}
+        />
+        <Route
+          exact
+          path="/pages/otherPages/careers.html"
+          render={() => (
+            <div>
+              <NavBar />
+              <h2>CAREERS</h2>
+            </div>
+          )}
         />
         <Route
           exact
           path="/pages/otherPages/franchise.html"
-          render={() => <NavBar navData={FranchiseNavItems} />}
+          render={() => (
+            <div>
+              <NavBar navData={FranchiseNavItems} />
+              <h2>FRANCHISE</h2>
+            </div>
+          )}
         />
         <Route
           exact
           path="/pages/otherPages/pickup.html"
-          render={() => <NavBar pickup={true} />}
+          render={() => (
+            <div>
+              <NavBar pickup={true} />
+              <main id="pickup-page" className="landing-page">
+                <div className="container-fluid text-center landing-content-wrapper">
+                  <h1 className="landing-heading mb-4 mb-lg-5">
+                    Choose your location to place an order!
+                  </h1>
+                  {Locations.map((location, index) => {
+                    return (
+                      <LocationsCard
+                        key={index}
+                        name={location.name}
+                        description={location.description}
+                        address={location.address}
+                        directionsLink={location.directionsLink}
+                        pickup={location.pickup}
+                        ddLink={location.ddLink}
+                        uberEatsLink={location.uberEatsLink}
+                        pdf={location.pdf}
+                      />
+                    );
+                  })}
+                  <div
+                    style={{ maxWidth: "1200px" }}
+                    className="mt-md-4 mx-auto"
+                  ></div>
+                </div>
+              </main>
+            </div>
+          )}
         />
-        <Route path="/" render={() => <NavBar />} />
-        <Route render={() => <h1>Error! Page not found!</h1>} />
-      </Switch>
-
-      <Switch>
+        <Route
+          exact
+          path="/pages/otherPages/contact.html"
+          render={() => (
+            <div>
+              <NavBar />
+              <main id="pickup-page" className="landing-page">
+                <div className="container-fluid text-center landing-content-wrapper">
+                  {Locations.map((location, index) => {
+                    return (
+                      <LocationsCard
+                        key={index}
+                        name={location.name}
+                        description={location.description}
+                        address={location.address}
+                        phone={location.phone}
+                        contactPage={true}
+                      />
+                    );
+                  })}
+                </div>
+              </main>
+            </div>
+          )}
+        />
         {/* Start Menu Categories */}
-
         <Route
           exact
           path="/pages/mainMenu/menuCategories/handhelds.html"
           render={() => (
             <div>
+              <NavBar />
               <main>
                 <HeroImg img={"freestanding"} />
                 <Menu
@@ -66,6 +137,7 @@ function App() {
           path="/pages/catering/cateringMenu/platters.html"
           render={() => (
             <div>
+              <NavBar catering={true} />
               <Menu menuData={CateringPlattersData} />
             </div>
           )}
@@ -74,57 +146,88 @@ function App() {
         <Route
           exact
           path="/pages/catering/cateringMenu/saladPlatters.html"
-          render={() => <Menu menuData={CateringSaladPlattersData} />}
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringSaladPlattersData} />
+            </div>
+          )}
         />
         <Route
           exact
           path="/pages/catering/cateringMenu/sidePlatters.html"
-          render={() => <Menu menuData={CateringSidePlattersData} />}
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringSidePlattersData} />
+            </div>
+          )}
         />
         <Route
           exact
           path="/pages/catering/cateringMenu/index.html"
-          render={() => <Menu menuData={CateringCategoryData} />}
+          render={() => (
+            <div>
+              <NavBar catering={true} />
+              <Menu menuData={CateringCategoryData} />
+            </div>
+          )}
         />
 
         <Route
           exact
           path="/pages/mainMenu/menuCategories/largePlates.html"
           render={() => (
-            <div id="skip-link">
-              <HeroImg img={"freestanding"} />
-              <Menu
-                menuData={LargePlates}
-                backButton={true}
-                menuTitle={"Large Plates"}
-              />
+            <div>
+              <NavBar />
+
+              <div id="skip-link">
+                <HeroImg img={"freestanding"} />
+                <Menu
+                  menuData={LargePlates}
+                  backButton={true}
+                  menuTitle={"Large Plates"}
+                />
+              </div>
             </div>
           )}
         />
         {/* End Menu Categories */}
+
         {/* Start PDP Pages */}
+        {/* Routing doesn't work with this pattern because anything can be name, need to check against data */}
         <Route
           exact
           path="/pages/mainMenu/:type/:name.html"
-          render={(routeProps) => <PDP data={MainMenuData} {...routeProps} />}
+          render={(routeProps) => (
+            <div>
+              <NavBar />
+              <PDP data={MainMenuData} {...routeProps} />
+            </div>
+          )}
         />
         <Route
           exact
           path="/pages/catering/:type/:name.html"
           render={(routeProps) => (
-            <PDP data={CateringPlattersData} {...routeProps} catering={true} />
+            <div>
+              <NavBar catering={true} />
+              <PDP
+                data={CateringPlattersData}
+                {...routeProps}
+                catering={true}
+              />
+            </div>
           )}
         />
-       
         {/* End PDP Pages */}
-      </Switch>
 
-      <Switch>
         <Route
           exact
           path="/pages/mainMenu/index.html"
           render={() => (
             <div>
+              <NavBar />
               <main>
                 <HeroImg img={"freestanding"} />
                 <Menu menuData={MenuCategoryData} backButton={false} />
@@ -132,11 +235,13 @@ function App() {
             </div>
           )}
         />
+
         <Route
           exact
           path="/"
           render={() => (
             <div>
+              <NavBar />
               <HeroImg img={"ourStory"} />
               <main>
                 <Menu
@@ -154,91 +259,7 @@ function App() {
           )}
         />
 
-        {/* OTHER PAGES */}
-        <Route
-          exact
-          path="/pages/otherPages/ourStory.html"
-          render={() => (
-            <div>
-              <HeroImg img={"ourStory"} />
-              <h2>ourStory</h2>
-            </div>
-          )}
-        />
-        <Route
-          exact
-          path="/pages/otherPages/careers.html"
-          render={() => (
-            <div>
-              <h2>CAREERS</h2>
-            </div>
-          )}
-        />
-        <Route
-          exact
-          path="/pages/otherPages/franchise.html"
-          render={() => (
-            <div>
-              <h2>FRANCHISE</h2>
-            </div>
-          )}
-        />
-        <Route
-          exact
-          path="/pages/otherPages/pickup.html"
-          render={() => (
-            <main id="pickup-page" className="landing-page">
-              <div className="container-fluid text-center landing-content-wrapper">
-                <h1 className="landing-heading mb-4 mb-lg-5">
-                  Choose your location to place an order!
-                </h1>
-                {Locations.map((location, index) => {
-                  return (
-                    <LocationsCard
-                      key={index}
-                      name={location.name}
-                      description={location.description}
-                      address={location.address}
-                      directionsLink={location.directionsLink}
-                      pickup={location.pickup}
-                      ddLink={location.ddLink}
-                      uberEatsLink={location.uberEatsLink}
-                      pdf={location.pdf}
-                    />
-                  );
-                })}
-                <div
-                  style={{ maxWidth: "1200px" }}
-                  className="mt-md-4 mx-auto"
-                ></div>
-              </div>
-            </main>
-          )}
-        />
-        <Route
-          exact
-          path="/pages/otherPages/contact.html"
-          render={() => (
-            <main id="pickup-page" className="landing-page">
-              <div className="container-fluid text-center landing-content-wrapper">
-                {Locations.map((location, index) => {
-                  return (
-                    <LocationsCard
-                      key={index}
-                      name={location.name}
-                      description={location.description}
-                      address={location.address}
-                      phone={location.phone}
-                      contactPage={true}
-                    />
-                  );
-                })}
-              </div>
-            </main>
-          )}
-        />
-        
-      <Route render={() => <h1>Error! Not Found!</h1>} />
+        <Route render={() => <h1>Error! Page not found!</h1>} />
       </Switch>
 
       <Footer />

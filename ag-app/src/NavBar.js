@@ -1,6 +1,6 @@
 // Should this be solved w/ state?
 import React, { Component } from "react";
-import { NavItems } from "./NavItems";
+import { NavItems } from "./assets/data/navData/NavItems";
 import { SocialNavItems } from "./SocialNavItems";
 import { NavLink } from "react-router-dom";
 

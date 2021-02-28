@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class MenuItem extends Component {
   static defaultProps = {
@@ -32,7 +33,7 @@ class MenuItem extends Component {
 
     return (
       <li className={"col-lg-4 col-md-6 mt-4 pt-3 pt-md-0 menu-item-col"}>
-        <a className={"d-block"} aria-label={`View ${this.props.title}`} href={`${this.props.src}`}>
+        <NavLink className={"d-block"} aria-label={`View ${this.props.title}`} to={`${this.props.src}`}>
           <div className="col-xl-4 col-md-6 pt-lg-0 product-content-wrapper-lg container-fluid-fluid pt-5 menu-item-col">
             <div className="primary-subheading-wrapper w-100 justify-content-center">
               <div className="mb-0 primary-subheading">{this.props.title}</div>
@@ -48,7 +49,7 @@ class MenuItem extends Component {
               ""
             )}
           </div>
-        </a>
+        </NavLink>
       </li>
     );
   }
